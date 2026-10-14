@@ -1,4 +1,4 @@
-chain_a	resid_a	resname_a	chain_b	resid_b	resname_b	n_models	occ_hbond	occ_salt	occ_hydro	occ_any	mean_score	mean_rel_dsasa	dominant	stabilizing	occ_any_model	of_models
+chain_a	resid_a	resname_a	chain_b	resid_b	resname_b	n_models	occ_hbond	occ_salt	occ_hydro	occ_any	mean_score	mean_rel_dsasa	dominant	stabilizing	of_models
 A	924	ARG	B	193	GLU	5	1.0	1.0	0.0	1.0	7.1	0.3304	hbond	1	5
 A	949	LYS	B	153	GLU	5	0.8	1.0	0.0	1.0	3.3	0.44	salt	1	5
 A	949	LYS	B	142	ASP	5	0.0	1.0	0.0	1.0	3.0	0.3349	salt	1	5
