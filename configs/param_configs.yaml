@@ -95,3 +95,4 @@ interface_summary:
   min_contact_models: 2
   top_residues: 10
   top_pairs: 10
+  panel_gap: 0.14

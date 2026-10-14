@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Summarize interface occupancy and merge five 4x4 inch plots into one panel.
+"""Summarize interface contact occupancy and merge five 4x4 inch plots into one panel.
 
 Args:
     --input: folder with the interface TSV outputs.
@@ -15,6 +15,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.colors import to_rgb
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 import numpy as np
@@ -23,11 +24,12 @@ from tqdm import tqdm
 ###################################### constants
 NAME = "interface_summary"
 SEED = 42
-DEFAULTS = {"input": None, "output": None, "seed": SEED, "occ_cutoff": 0.5, "burial_cutoff": 0.25, "contact_min_models": 1, "min_contact_models": 2, "top_residues": 10, "top_pairs": 10}
+DEFAULTS = {"input": None, "output": None, "seed": SEED, "occ_cutoff": 0.5, "burial_cutoff": 0.25, "contact_min_models": 1, "min_contact_models": 2, "top_residues": 10, "top_pairs": 10, "panel_gap": 0.14}
 TYPES = ("hbond", "salt", "hydro")
 TYPE_LABEL = {"hbond": "H-bond", "salt": "Salt bridge", "hydro": "Hydrophobic"}
 TYPE_COLOR = {"hbond": "#276FBF", "salt": "#C44536", "hydro": "#D49A20"}
 TYPE_MARKER = {"hbond": "o", "salt": "^", "hydro": "s"}
+CHAIN_COLOR = {"A": "#276FBF", "B": "#C44536"}
 SOURCE_COLORS = ["#276FBF", "#C44536", "#D49A20", "#2E7D32", "#7B1FA2", "#00838F"]
 PANEL_LAYOUT = (2, 3)
 PANEL_LETTERS = "ABCDE"
@@ -132,34 +134,50 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
         if len(seen["contact"]) < min_contact:
             continue
         occ = {k: len(seen[k]) / n_models for k in TYPES}
-        residues.append({"key": key, "occ": occ, "any": len(seen["any"]) / n_models, "contact": len(seen["contact"]) / n_models, "n": len(seen["any"]), "burial": burial(key), "dominant": max(TYPES, key=occ.get) if any(occ.values()) else "none", "by_src": {s: len(seen["any"] & source_models[s]) / len(source_models[s]) for s in sources}})
-    residues.sort(key=lambda r: (-r["contact"], -r["any"], -(r["burial"] if np.isfinite(r["burial"]) else -1)))
+        residues.append({"key": key, "occ": occ, "any": len(seen["any"]) / n_models, "contact": len(seen["contact"]) / n_models, "n": len(seen["contact"]), "burial": burial(key), "dominant": max(TYPES, key=occ.get) if any(occ.values()) else "none", "by_src": {s: len(seen["contact"] & source_models[s]) / len(source_models[s]) for s in sources}})
+    residues.sort(key=lambda r: (-r["contact"], -(r["burial"] if np.isfinite(r["burial"]) else -1)))
     pairs = []
     for key in [k for k, v in contact_models.items() if len(v) >= min_contact]:
         seen = pair_seen[key]
         occ = {k: len(seen[k]) / n_models for k in TYPES}
         bs = [b for b in (burial(key[:3]), burial(key[3:])) if np.isfinite(b)]
         b = float(np.mean(bs)) if bs else float("nan")
-        any_occ = len(seen["any"]) / n_models
-        pairs.append({"key": key, "occ": occ, "any": any_occ, "contact": len(contact_models[key]) / n_models, "n": len(seen["any"]), "score": float(np.mean(pair_scores[key])) if pair_scores.get(key) else 0.0, "burial": b, "dominant": max(TYPES, key=occ.get) if any(occ.values()) else "none", "stable": bool(any_occ >= params["occ_cutoff"] and np.isfinite(b) and b >= params["burial_cutoff"])})
-    pairs.sort(key=lambda r: (-r["contact"], -r["any"], -r["score"]))
+        contact_occ = len(contact_models[key]) / n_models
+        pairs.append({"key": key, "occ": occ, "any": len(seen["any"]) / n_models, "contact": contact_occ, "n": len(contact_models[key]), "score": float(np.mean(pair_scores[key])) if pair_scores.get(key) else 0.0, "burial": b, "dominant": max(TYPES, key=occ.get) if any(occ.values()) else "none", "stable": bool(contact_occ >= params["occ_cutoff"] and np.isfinite(b) and b >= params["burial_cutoff"])})
+    pairs.sort(key=lambda r: (-r["contact"], -r["score"]))
     return residues, pairs, contact_models, sources, n_models
-###################################### plot A binary contact map
-def plot_contact_map(contact_models, min_models, rasters, path):
-    binary = [k for k, v in contact_models.items() if len(v) >= min_models]
-    rows = sorted({k[:3] for k in binary}, key=lambda k: k[1])
-    cols = sorted({k[3:] for k in binary}, key=lambda k: k[1])
+###################################### plot A contact map summed over models
+def plot_contact_map(contact_models, min_models, n_models, stats, rasters, path):
+    counts = {k: len(v) for k, v in contact_models.items() if len(v) >= min_models}
+    rows = sorted({k[:3] for k in counts}, key=lambda k: k[1])
+    cols = sorted({k[3:] for k in counts}, key=lambda k: k[1])
     ri = {k: i for i, k in enumerate(rows)}
     ci = {k: j for j, k in enumerate(cols)}
     matrix = np.zeros((max(1, len(rows)), max(1, len(cols))))
-    for k in binary:
-        matrix[ri[k[:3]], ci[k[3:]]] = 1
-    fig, ax = new_figure()
-    ax.imshow(matrix, cmap="Greys", vmin=0, vmax=1, interpolation="nearest", aspect="auto")
+    for k, count in counts.items():
+        matrix[ri[k[:3]], ci[k[3:]]] = count
+    chain_a = rows[0][0] if rows else "A"
+    chain_b = cols[0][0] if cols else "B"
+    cmap = plt.get_cmap("Blues").copy()
+    cmap.set_bad("white")
+    fig = plt.figure(figsize=FIG, layout="constrained")
+    grid = fig.add_gridspec(2, 2, width_ratios=[0.05, 1], height_ratios=[0.05, 1])
+    ax = fig.add_subplot(grid[1, 1])
+    ax_top = fig.add_subplot(grid[0, 1])
+    ax_left = fig.add_subplot(grid[1, 0])
+    image = ax.imshow(np.ma.masked_equal(matrix, 0), cmap=cmap, vmin=0, vmax=n_models, interpolation="nearest", aspect="auto")
     ax.set_xticks([])
     ax.set_yticks([])
     for spine in ax.spines.values():
         spine.set_visible(False)
+    ax_top.imshow(np.full((1, 1, 3), to_rgb(CHAIN_COLOR.get(chain_b, "0.5"))), aspect="auto")
+    ax_top.set_axis_off()
+    ax_top.set_title(f"Contact map · {n_models} models · sum of binarized contacts\n{stats['label']}", fontsize=FONT, loc="left")
+    ax_left.imshow(np.full((len(rows) or 1, 1, 3), to_rgb(CHAIN_COLOR.get(chain_a, "0.5"))), aspect="auto")
+    ax_left.set_axis_off()
+    colorbar = fig.colorbar(image, ax=ax, shrink=0.6, aspect=12, pad=0.02)
+    colorbar.set_label("Models in contact", fontsize=SMALL_FONT)
+    colorbar.ax.tick_params(labelsize=SMALL_FONT, length=2)
     finish_figure(fig, path, rasters)
 ###################################### plot B complex stability
 def plot_complex(complexes, sources, params, rasters, path):
@@ -168,7 +186,6 @@ def plot_complex(complexes, sources, params, rasters, path):
     for s in sources:
         rows = [r for r in complexes if r["source"] == s]
         ax.scatter([number(r, "dASA_A2") for r in rows], [number(r, "frac_dASA") for r in rows], s=10, color=colors[s], edgecolor="white", linewidth=0.3, alpha=0.9, label=s)
-    ax.axhline(params["burial_cutoff"], ls="--", color="0.4", lw=0.6)
     ax.set_xlabel("dASA (Å²)", fontsize=FONT, labelpad=3)
     ax.set_ylabel("Fraction buried", fontsize=FONT, labelpad=3)
     ax.set_title("Complex stability", fontsize=FONT + 1, loc="left")
@@ -176,7 +193,7 @@ def plot_complex(complexes, sources, params, rasters, path):
     style_axis(ax)
     ax.legend(frameon=False, fontsize=SMALL_FONT, handletextpad=0.3, markerscale=1.2)
     finish_figure(fig, path, rasters)
-###################################### plot C burial vs occupancy
+###################################### plot C burial vs contact occupancy
 def plot_scatter(residues, n_models, params, stats, rasters, path):
     fig, ax = new_figure()
     points = [r for r in residues if np.isfinite(r["burial"])]
@@ -188,14 +205,14 @@ def plot_scatter(residues, n_models, params, stats, rasters, path):
         ax.axhline(bc, ls="--", color="0.4", lw=0.6)
         rng = np.random.default_rng(params["seed"])
         for r in points:
-            ax.scatter(r["any"] + rng.uniform(-0.006, 0.006), r["burial"] + rng.uniform(-0.002, 0.002), s=12 + 60 * r["n"] / max(1, n_models), marker=TYPE_MARKER.get(r["dominant"], "o"), color=TYPE_COLOR.get(r["dominant"], "0.5"), edgecolor="white", linewidth=0.3, alpha=0.9, zorder=3)
-        stable = sorted((r for r in points if r["any"] >= oc and r["burial"] >= bc), key=lambda r: (-r["any"], -r["burial"]))
+            ax.scatter(r["contact"] + rng.uniform(-0.006, 0.006), r["burial"] + rng.uniform(-0.002, 0.002), s=12 + 60 * r["n"] / max(1, n_models), marker=TYPE_MARKER.get(r["dominant"], "o"), color=TYPE_COLOR.get(r["dominant"], "0.5"), edgecolor="white", linewidth=0.3, alpha=0.9, zorder=3)
+        stable = sorted((r for r in points if r["contact"] >= oc and r["burial"] >= bc), key=lambda r: (-r["contact"], -r["burial"]))
         for r in stable[:5]:
-            ax.annotate(residue_label(r["key"]), (r["any"], r["burial"]), xytext=(3, 2), textcoords="offset points", fontsize=SMALL_FONT - 1)
+            ax.annotate(residue_label(r["key"]), (r["contact"], r["burial"]), xytext=(3, 2), textcoords="offset points", fontsize=SMALL_FONT - 1)
         ax.set_ylim(0, ymax)
     ax.set_xlim(-0.04, 1.15)
     ax.set_xticks([0, 0.25, 0.5, 0.75, 1])
-    ax.set_xlabel("Occupancy of any interaction", fontsize=FONT, labelpad=3)
+    ax.set_xlabel("Contact occupancy (≤8 Å)", fontsize=FONT, labelpad=3)
     ax.set_ylabel("Mean relative dSASA", fontsize=FONT, labelpad=3)
     ax.set_title(f"Burial vs occupancy · {n_models} models\n{stats['label']}", fontsize=FONT, loc="left")
     style_axis(ax)
@@ -240,12 +257,11 @@ def plot_pairs(pairs, top, n_models, stats, rasters, path):
     offsets = {"hbond": 0.2, "salt": 0, "hydro": -0.2}
     fig, ax = new_figure()
     for r, y in zip(selected, ys):
-        ax.barh(y, r["any"], height=0.66, color="0.88", zorder=1)
+        ax.barh(y, r["contact"], height=0.66, color="0.88", zorder=1)
         for k in TYPES:
             if r["occ"][k] > 0:
                 ax.barh(y + offsets[k], r["occ"][k], height=0.16, color=TYPE_COLOR[k], zorder=2)
-        ax.scatter(r["contact"], y, marker="|", s=30, color="black", linewidths=0.8, zorder=3)
-        ax.text(min(r["any"] + 0.02, 1.04), y, f"{r['any']:.0%}", va="center", fontsize=SMALL_FONT - 1)
+        ax.text(min(r["contact"] + 0.02, 1.04), y, f"{r['contact']:.0%}", va="center", fontsize=SMALL_FONT - 1)
     ax.set_yticks(ys)
     ax.set_yticklabels([pair_label(r["key"]) for r in selected], fontsize=SMALL_FONT - 1)
     for tick, r in zip(ax.get_yticklabels(), selected):
@@ -253,17 +269,18 @@ def plot_pairs(pairs, top, n_models, stats, rasters, path):
             tick.set_fontweight("bold")
     ax.set_xlim(0, 1.13)
     ax.set_xticks([0, 0.25, 0.5, 0.75, 1])
-    ax.set_xlabel("Occupancy", fontsize=FONT, labelpad=3)
+    ax.set_xlabel("Contact occupancy (≤8 Å)", fontsize=FONT, labelpad=3)
     ax.set_title(f"Residue-pair occupancy · {n_models} models\n{stats['label']}", fontsize=FONT, loc="left")
     ax.grid(axis="x", alpha=0.22, lw=0.5)
     style_axis(ax)
-    extra = [Patch(facecolor="0.88", label="Any"), Line2D([], [], marker="|", color="black", ls="", markersize=6, label="Contact ≤8 Å")]
-    ax.legend(handles=type_handles(extra), fontsize=SMALL_FONT - 1, ncol=3, frameon=False, loc="lower center", bbox_to_anchor=(0.4, 1.0), handletextpad=0.3, columnspacing=0.6)
+    extra = [Patch(facecolor="0.88", label="Contact ≤8 Å")]
+    ax.legend(handles=type_handles(extra), fontsize=SMALL_FONT - 1, ncol=2, frameon=False, loc="lower center", bbox_to_anchor=(0.4, 1.0), handletextpad=0.3, columnspacing=0.6)
     finish_figure(fig, path, rasters)
 ###################################### merged panel
-def plot_panel(rasters, out, name):
+def plot_panel(rasters, out, name, gap):
     rows, cols = PANEL_LAYOUT
     fig, axes = plt.subplots(rows, cols, figsize=(FIG[0] * cols, FIG[1] * rows), layout="constrained")
+    fig.get_layout_engine().set(wspace=gap, hspace=gap, w_pad=0.06, h_pad=0.06)
     for ax, img, letter in zip(axes.ravel(), rasters, PANEL_LETTERS):
         ax.imshow(img)
         ax.set_axis_off()
@@ -287,6 +304,7 @@ def main():
     p.add_argument("--min-contact-models", type=int)
     p.add_argument("--top-residues", type=int)
     p.add_argument("--top-pairs", type=int)
+    p.add_argument("--panel-gap", type=float)
     p.add_argument("--yaml-in")
     p.add_argument("--yaml-out", default="configs/param_configs.yaml")
     args = p.parse_args()
@@ -294,7 +312,7 @@ def main():
     if args.yaml_in:
         with open(args.yaml_in) as handle:
             params.update((yaml.safe_load(handle) or {}).get(NAME, {}))
-    for key in ("input", "output", "seed", "occ_cutoff", "burial_cutoff", "contact_min_models", "min_contact_models", "top_residues", "top_pairs"):
+    for key in ("input", "output", "seed", "occ_cutoff", "burial_cutoff", "contact_min_models", "min_contact_models", "top_residues", "top_pairs", "panel_gap"):
         value = getattr(args, key)
         if value is not None:
             params[key] = value
@@ -323,12 +341,12 @@ def main():
     write_tsv(out / f"{name}_residue_frequencies.tsv", residue_cols, residue_out)
     write_tsv(out / f"{name}_pair_frequencies.tsv", pair_cols, pair_out)
     rasters = []
-    plot_contact_map(contact_models, params["contact_min_models"], rasters, out / f"{name}_A_contact_map.svg")
+    plot_contact_map(contact_models, params["contact_min_models"], n_models, stats, rasters, out / f"{name}_A_contact_map.svg")
     plot_complex(complexes, sources, params, rasters, out / f"{name}_B_complex_stability.svg")
     plot_scatter(residues, n_models, params, stats, rasters, out / f"{name}_C_burial_vs_occupancy.svg")
     plot_residues(residues, params["top_residues"], n_models, stats, rasters, out / f"{name}_D_residue_occupancy.svg")
     plot_pairs(pairs, params["top_pairs"], n_models, stats, rasters, out / f"{name}_E_pair_occupancy.svg")
-    plot_panel(rasters, out, name)
+    plot_panel(rasters, out, name, params["panel_gap"])
     print(f"[PYTHON-INFO] models={n_models} residues={len(residues)} pairs={len(pairs)} stabilizing_pairs={sum(r['stable'] for r in pairs)}")
     save_config(args.yaml_out, params)
     print(f"[PYTHON-INFO] {datetime.datetime.now():%Y-%m-%d %H:%M:%S} exec={time.time()-start:.2f}s maxmem={resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024:.1f}MB")
