@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Summarize interface interaction frequencies and generate plots."""
+
 ###################################### dependencies
 import argparse
 import csv
@@ -64,11 +65,12 @@ def type_handles(extra_any=False):
         handles.append(Line2D([], [], color="0.85", lw=5, label="any type"))
     return handles
 
+###################################### plots
 def plot_residues(records, top, path, n_models, burial_cutoff):
     selected = records[:top]
     fig = plt.figure(figsize=(4.5, 4))
     grid = fig.add_gridspec(1, 2, width_ratios=[3, 1], left=0.30, right=0.97, top=0.85, bottom=0.07, wspace=0.06)
-    ax, bx = fig.add_subplot(grid[0]), fig.add_subplot(grid[1], sharey=None)
+    ax, bx = fig.add_subplot(grid[0]), fig.add_subplot(grid[1])
     if selected:
         matrix = np.array([[r["occ"][k] for k in TYPES] for r in selected])
         ax.imshow(matrix, cmap="Blues", vmin=0, vmax=1, aspect="auto")
@@ -176,12 +178,15 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
             value = number(r, "rel_dSASA", float("nan"))
             if np.isfinite(value):
                 residue_burial[(r["chain"], r["resid"], r["resname"])].append(value)
+
     def burial(key):
         values = residue_burial.get(key, [])
         return float(np.mean(values)) if values else float("nan")
+
     residue_seen = defaultdict(lambda: defaultdict(set))
     pair_seen = defaultdict(lambda: defaultdict(set))
     pair_scores = defaultdict(list)
+
     for r in pair_rows:
         name = r["structure"]
         if name not in models:
@@ -199,6 +204,7 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
         residue_seen[kb]["any"].add(name)
         pair_seen[kp]["any"].add(name)
         pair_scores[kp].append(number(r, "interaction_score"))
+
     residues = []
     for key, seen in residue_seen.items():
         occ = {k: len(seen[k]) / n_models for k in TYPES}
@@ -207,6 +213,7 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
         b = burial(key)
         residues.append({"key": key, "occ": occ, "any": any_occ, "n": len(seen["any"]), "burial": b, "dominant": dominant if max(occ.values()) else "none", "by_src": {s: len(seen["any"] & {m for m in models if model_source[m] == s}) / max(1, sum(v == s for v in model_source.values())) for s in sources}})
     residues.sort(key=lambda r: (-r["any"], -(r["burial"] if np.isfinite(r["burial"]) else -1)))
+
     pairs = []
     for key, seen in pair_seen.items():
         occ = {k: len(seen[k]) / n_models for k in TYPES}
@@ -224,7 +231,7 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
 def main():
     start = time.time()
     p = argparse.ArgumentParser()
-    p.add_argument("--input")
+    p.add_argument("--input", required=True)
     p.add_argument("--output")
     p.add_argument("--seed", type=int)
     p.add_argument("--occ-cutoff", type=float)
@@ -234,6 +241,7 @@ def main():
     p.add_argument("--yaml-in")
     p.add_argument("--yaml-out", default="configs/param_configs.yaml")
     args = p.parse_args()
+
     params = {**DEFAULTS}
     if args.yaml_in:
         with open(args.yaml_in) as handle:
@@ -242,30 +250,39 @@ def main():
         value = getattr(args, key)
         if value is not None:
             params[key] = value
-    if not params["input"]:
-        raise SystemExit("[PYTHON-INFO] --input is required")
+
     np.random.seed(params["seed"])
-    folder = Path(params["input"])
-    name = folder.resolve().name
-    out = Path(params["output"] or folder)
+    folder = Path(params["input"]).resolve()
+    name = folder.name
+    data_folder = folder / "interfaces" if (folder / "interfaces").is_dir() else folder
+    out = Path(params["output"]).resolve() if params["output"] else folder / "interface_summary"
     out.mkdir(parents=True, exist_ok=True)
-    complex_path = folder / f"{name}_complex_scores.tsv"
-    residue_path = folder / f"{name}_residue_scores.tsv"
-    pair_path = folder / f"{name}_pymol_pairs.tsv"
+
+    complex_path = data_folder / f"{name}_complex_scores.tsv"
+    residue_path = data_folder / f"{name}_residue_scores.tsv"
+    pair_path = data_folder / f"{name}_pymol_pairs.tsv"
+
     for path in (complex_path, residue_path, pair_path):
-        if not path.exists():
+        if not path.is_file():
             raise SystemExit(f"[PYTHON-INFO] missing input TSV: {path}")
-    complexes, residues_raw, pairs_raw = read_tsv(complex_path), read_tsv(residue_path), read_tsv(pair_path)
+
+    print(f"[PYTHON-INFO] group={name} input={data_folder} output={out}")
+    complexes = read_tsv(complex_path)
+    residues_raw = read_tsv(residue_path)
+    pairs_raw = read_tsv(pair_path)
     residues, pairs, sources, n_models = aggregate(complexes, residues_raw, pairs_raw, params)
+
     residue_cols = ["chain", "resid", "resname", "n_models", "occ_hbond", "occ_salt", "occ_hydro", "occ_any", "mean_rel_dsasa", "dominant"] + [f"occ_any_{s}" for s in sources] + ["of_models"]
     residue_out = [[*r["key"], r["n"], *[round(r["occ"][k], 4) for k in TYPES], round(r["any"], 4), "" if not np.isfinite(r["burial"]) else round(r["burial"], 4), r["dominant"], *[round(r["by_src"][s], 4) for s in sources], n_models] for r in residues]
     pair_cols = ["chain_a", "resid_a", "resname_a", "chain_b", "resid_b", "resname_b", "n_models", "occ_hbond", "occ_salt", "occ_hydro", "occ_any", "mean_score", "mean_rel_dsasa", "dominant", "stabilizing"] + [f"occ_any_{s}" for s in sources] + ["of_models"]
     pair_out = [[*r["key"], r["n"], *[round(r["occ"][k], 4) for k in TYPES], round(r["any"], 4), round(r["score"], 3), "" if not np.isfinite(r["burial"]) else round(r["burial"], 4), r["dominant"], int(r["stable"]), *[round(len({m for m in []}), 4) for _ in []], n_models] for r in pairs]
+
     write_tsv(out / f"{name}_residue_frequencies.tsv", residue_cols, residue_out)
     write_tsv(out / f"{name}_pair_frequencies.tsv", pair_cols, pair_out)
     plot_residues(residues, params["top_residues"], out / f"{name}_A_residue_occupancy.svg", n_models, params["burial_cutoff"])
     plot_pairs(pairs, params["top_pairs"], out / f"{name}_B_pair_occupancy.svg", n_models)
     plot_scatter(residues, out / f"{name}_C_burial_vs_occupancy.svg", n_models, params)
+
     print(f"[PYTHON-INFO] models={n_models} residues={len(residues)} pairs={len(pairs)} stabilizing_pairs={sum(r['stable'] for r in pairs)}")
     save_config(args.yaml_out, params)
     print(f"[PYTHON-INFO] {datetime.datetime.now():%Y-%m-%d %H:%M:%S} exec={time.time()-start:.2f}s maxmem={resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024:.1f}MB")

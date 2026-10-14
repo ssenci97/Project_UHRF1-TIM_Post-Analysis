@@ -1,0 +1,73 @@
+[SLURM-INFO] Working directory: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST
+[SLURM-INFO] Started: 2026-10-14 17:26:04
+[SLURM-INFO] Processing group: .ipynb_checkpoints
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: .ipynb_checkpoints: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-DBD_x_UHRF1-SRA
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-DBD_x_UHRF1-SRA: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-DBD_x_UHRF1-TTD
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-DBD_x_UHRF1-TTD: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-PHD
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-NTD_x_UHRF1-PHD: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-RING
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-NTD_x_UHRF1-RING: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-SRA
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-NTD_x_UHRF1-SRA: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-TTD
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-NTD_x_UHRF1-TTD: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-UBL
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-NTD_x_UHRF1-UBL: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-PAB_x_UHRF1-SRA
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-PAB_x_UHRF1-SRA: alignment failed; skipping remaining stages
+[SLURM-INFO] Processing group: TIM-PAB_x_UHRF1-TTD
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --workers 4
+[SLURM-INFO] ERROR: TIM-PAB_x_UHRF1-TTD: alignment failed; skipping remaining stages
+[SLURM-INFO] Finished: 2026-10-14 17:26:07 execution_time=2s groups=10 failed_groups=10

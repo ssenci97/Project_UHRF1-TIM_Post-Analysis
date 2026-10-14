@@ -1,0 +1,4 @@
+structure	source	clash	len_res_a	len_res_b	len_atoms_a	len_atoms_b	dASA_A2	initial_sasa_A2	frac_dASA	n_contacts	iface_res_a	iface_res_b	min_dist_A	contact_score	haddock_score
+TIM-DBD_x_UHRF1-SRA_abin_emref_13	abin	0	141	204	1150	1606	1435.01	21015.15	0.0683	183	37	39	2.538	79.9175	
+TIM-DBD_x_UHRF1-SRA_abin_emref_83	abin	0	141	204	1150	1606	1434.37	20806.68	0.0689	172	37	49	2.566	78.4306	
+TIM-DBD_x_UHRF1-SRA_model_0	model	1	139	164	1136	1283	1555.66	19882.17	0.0782	222	38	44	2.226	90.8172	

@@ -1,0 +1,6 @@
+structure	source	clash	len_res_a	len_res_b	len_atoms_a	len_atoms_b	dASA_A2	initial_sasa_A2	frac_dASA	n_contacts	iface_res_a	iface_res_b	min_dist_A	contact_score	haddock_score
+TIM-DBD_x_UHRF1-TTD_model_0	model	0	139	151	1136	1243	1867.73	20355.39	0.0918	201	30	47	2.646	78.4403	
+TIM-DBD_x_UHRF1-TTD_model_1	model	1	139	151	1136	1243	2457.87	20626.28	0.1192	279	51	62	2.35	114.9818	
+TIM-DBD_x_UHRF1-TTD_model_2	model	1	139	151	1136	1243	2630.54	20424.94	0.1288	307	51	62	2.286	121.7208	
+TIM-DBD_x_UHRF1-TTD_model_3	model	1	139	151	1136	1243	2433.43	20738.46	0.1173	282	52	66	2.296	113.6237	
+TIM-DBD_x_UHRF1-TTD_model_4	model	1	139	151	1136	1243	1796.7	20495.43	0.0877	206	30	50	2.383	79.0495	
