@@ -1,0 +1,30 @@
+interfaces:
+  bins: 30
+  block: 1000
+  contact_cutoff: 8
+  hbond_cutoff: 3.5
+  hydro_cutoff: 4.5
+  input: data/models_by_group/TIM-NTD_x_UHRF1-SRA
+  output: data/models_by_group/TIM-NTD_x_UHRF1-SRA/interfaces
+  panel_size: 4
+  plots: true
+  salt_cutoff: 4.0
+  score_cutoff: 12.0
+  seed: 42
+  w_hbond: 1.0
+  w_hydro: 0.1
+  w_salt: 1.5
+  workers: null
+run_openmm:
+  bins: 30
+  block: 1000
+  contact_cutoff: 8
+  fig_size:
+  - 8
+  - 6
+  input: data/synced_pdbs/
+  output: data/interfaces/
+  plots: true
+  score_cutoff: 12.0
+  seed: 42
+  workers: null

@@ -1,0 +1,39 @@
+[PYTHON-INFO] structures=14 detected_cpus=16 workers=16 contact_cutoff=8A score_cutoff=12.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A
+interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:05<01:08,  5.30s/it]interfaces:  14%|█▍        | 2/14 [00:05<00:27,  2.27s/it]interfaces:  21%|██▏       | 3/14 [00:05<00:14,  1.33s/it]interfaces:  29%|██▊       | 4/14 [00:05<00:08,  1.17it/s]interfaces:  43%|████▎     | 6/14 [00:05<00:03,  2.22it/s]interfaces:  50%|█████     | 7/14 [00:06<00:02,  2.51it/s]interfaces:  57%|█████▋    | 8/14 [00:06<00:01,  3.10it/s]interfaces:  79%|███████▊  | 11/14 [00:06<00:00,  5.98it/s]interfaces:  93%|█████████▎| 13/14 [00:06<00:00,  7.58it/s]interfaces: 100%|██████████| 14/14 [00:06<00:00,  2.02it/s]
+/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/src/interfaces.py:239: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
+  sc = ax.scatter(x[m], y[m], s=12, alpha=0.7, edgecolor="none", c=None if c is None else c[m], cmap="viridis")
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_77: dASA=899.1A2 n_contacts=1655 contact_score=1113.09 interface_residues=55 pymol_pairs=402
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_3: dASA=1258.6A2 n_contacts=2861 contact_score=1717.05 interface_residues=72 pymol_pairs=561
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: dASA=1252.0A2 n_contacts=2658 contact_score=1745.73 interface_residues=74 pymol_pairs=539
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_1_emref_1: dASA=1228.3A2 n_contacts=2212 contact_score=1552.37 interface_residues=72 pymol_pairs=568
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_2: dASA=1052.2A2 n_contacts=2151 contact_score=1428.09 interface_residues=66 pymol_pairs=477
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_1: dASA=1875.2A2 n_contacts=4017 contact_score=2335.69 interface_residues=95 pymol_pairs=682
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1: dASA=1299.8A2 n_contacts=2428 contact_score=1610.98 interface_residues=68 pymol_pairs=555
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1: dASA=1006.7A2 n_contacts=1731 contact_score=1182.95 interface_residues=55 pymol_pairs=454
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_0_emref_1: dASA=932.5A2 n_contacts=1797 contact_score=1211.14 interface_residues=60 pymol_pairs=459
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_71: dASA=1317.7A2 n_contacts=2709 contact_score=1669.91 interface_residues=67 pymol_pairs=572
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1: dASA=1213.7A2 n_contacts=2521 contact_score=1587.15 interface_residues=65 pymol_pairs=541
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: dASA=1229.5A2 n_contacts=2771 contact_score=1677.31 interface_residues=65 pymol_pairs=564
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_0_emref_1: dASA=1276.2A2 n_contacts=2425 contact_score=1611.30 interface_residues=68 pymol_pairs=555
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_57: dASA=881.5A2 n_contacts=1548 contact_score=1067.19 interface_residues=53 pymol_pairs=389
+[PYTHON-INFO] wrote 14 complex rows to data/models_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_complex_scores.tsv, 935 residue rows to data/models_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_residue_scores.tsv, 7318 pymol pair rows to data/models_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_pymol_pairs.tsv
+[PYTHON-INFO] wrote 3x3 summary panel data/models_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_summary.svg
+[PYTHON-INFO] 2026-10-14 12:38:40 exec=11.68s maxmem=100.1MB
+[PYTHON-INFO] structures=11 detected_cpus=16 workers=16 contact_cutoff=8A score_cutoff=12.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:06<01:08,  6.82s/it]interfaces:  18%|█▊        | 2/11 [00:07<00:26,  2.92s/it]interfaces:  36%|███▋      | 4/11 [00:07<00:08,  1.18s/it]interfaces:  55%|█████▍    | 6/11 [00:08<00:04,  1.22it/s]interfaces:  64%|██████▎   | 7/11 [00:08<00:02,  1.54it/s]interfaces:  73%|███████▎  | 8/11 [00:08<00:01,  1.90it/s]interfaces:  91%|█████████ | 10/11 [00:08<00:00,  2.91it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.26it/s]
+/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/src/interfaces.py:239: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
+  sc = ax.scatter(x[m], y[m], s=12, alpha=0.7, edgecolor="none", c=None if c is None else c[m], cmap="viridis")
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_4: dASA=3145.4A2 n_contacts=6410 contact_score=3918.09 interface_residues=186 pymol_pairs=1245
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_2: dASA=3472.0A2 n_contacts=7102 contact_score=4222.86 interface_residues=185 pymol_pairs=1331
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_0: dASA=3222.5A2 n_contacts=6109 contact_score=3881.08 interface_residues=186 pymol_pairs=1285
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_1: dASA=3374.8A2 n_contacts=6511 contact_score=3967.38 interface_residues=171 pymol_pairs=1259
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_3: dASA=3517.5A2 n_contacts=6856 contact_score=4135.47 interface_residues=182 pymol_pairs=1315
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: dASA=1450.2A2 n_contacts=3062 contact_score=2115.47 interface_residues=98 pymol_pairs=816
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_1_emref_1: dASA=1187.2A2 n_contacts=1906 contact_score=1407.20 interface_residues=71 pymol_pairs=586
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_7: dASA=1230.2A2 n_contacts=2697 contact_score=1903.13 interface_residues=85 pymol_pairs=773
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_33: dASA=1328.8A2 n_contacts=2234 contact_score=1517.28 interface_residues=75 pymol_pairs=627
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_66: dASA=1399.1A2 n_contacts=2615 contact_score=1586.64 interface_residues=94 pymol_pairs=634
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_0_emref_1: dASA=1326.4A2 n_contacts=2365 contact_score=1545.86 interface_residues=75 pymol_pairs=578
+[PYTHON-INFO] wrote 11 complex rows to data/models_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_complex_scores.tsv, 1408 residue rows to data/models_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_residue_scores.tsv, 10449 pymol pair rows to data/models_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_pymol_pairs.tsv
+[PYTHON-INFO] wrote 3x3 summary panel data/models_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_summary.svg
+[PYTHON-INFO] 2026-10-14 12:38:51 exec=10.47s maxmem=105.1MB
