@@ -91,5 +91,6 @@ interface_summary:
   seed: 42
   occ_cutoff: 0.5
   burial_cutoff: 0.25
-  top_residues: 15
-  top_pairs: 12
+  contact_occ_cutoff: 0.5
+  top_residues: 10
+  top_pairs: 10
