@@ -9,7 +9,7 @@ align_and_export:
   interfaces: true
   plots: true
   haddock_plots: true
-  capri_tsv: null
+  capri_tsv: data/capri_ss_all.tsv
   contact_cutoff: 8.0
   score_cutoff: 12.0
   block: 1000

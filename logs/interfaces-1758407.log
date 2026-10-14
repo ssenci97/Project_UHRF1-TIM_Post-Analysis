@@ -1,0 +1,7 @@
+[SLURM-INFO] Starting four-stage pipeline: 2026-10-14 17:09:04
+[SLURM-INFO] Processing group: data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA
+usage: 01_align_export.py [-h] [--input INPUT] [--output OUTPUT] [--ref REF]
+                          [--align-chain ALIGN_CHAIN]
+                          [--3dmol-js THREEDMOL_JS] [--no-html]
+                          [--yaml-in YAML_IN] [--yaml-out YAML_OUT]
+01_align_export.py: error: unrecognized arguments: --capri-tsv data/capri_ss_all.tsv --workers 4

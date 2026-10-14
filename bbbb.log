@@ -2,12 +2,39 @@
 ==> Activating virtual environment...
 ==> Running view_interfaces.py processing loop...
 Processing: data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-DBD_x_UHRF1-SRA_abin_emref_13.pdb', 'TIM-DBD_x_UHRF1-SRA_abin_emref_83.pdb', 'TIM-DBD_x_UHRF1-SRA_model_0.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 0/3 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
 [PYTHON-INFO] structures=3 reference=TIM-DBD_x_UHRF1-SRA_abin_emref_13 align_chain=A haddock_matched=0 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_aligned.cif (3 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_viewer.html (1.3 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/3 [00:00<?, ?it/s]interfaces:  33%|███▎      | 1/3 [00:12<00:25, 12.57s/it]interfaces:  67%|██████▋   | 2/3 [00:14<00:06,  6.24s/it]interfaces: 100%|██████████| 3/3 [00:14<00:00,  4.80s/it]
+interfaces:   0%|          | 0/3 [00:00<?, ?it/s]interfaces:  33%|███▎      | 1/3 [00:03<00:06,  3.22s/it]interfaces:  67%|██████▋   | 2/3 [00:04<00:02,  2.27s/it]interfaces: 100%|██████████| 3/3 [00:04<00:00,  1.62s/it]
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_model_0: dASA=1555.7A2 n_contacts=3301 min_dist=2.23A clash=1 interface_residues=82 pymol_pairs=16
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_83: dASA=1434.4A2 n_contacts=2660 min_dist=2.57A clash=0 interface_residues=86 pymol_pairs=12
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_13: dASA=1435.0A2 n_contacts=2743 min_dist=2.54A clash=0 interface_residues=76 pymol_pairs=16
@@ -16,81 +43,188 @@ Processing: data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:15:33 exec=17.48s maxmem=103.3MB
+[PYTHON-INFO] 2026-10-14 17:02:12 exec=7.82s maxmem=111.0MB
 Processing: data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-DBD_x_UHRF1-TTD_model_0.pdb', 'TIM-DBD_x_UHRF1-TTD_model_1.pdb', 'TIM-DBD_x_UHRF1-TTD_model_2.pdb', 'TIM-DBD_x_UHRF1-TTD_model_3.pdb', 'TIM-DBD_x_UHRF1-TTD_model_4.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 0/5 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
 [PYTHON-INFO] structures=5 reference=TIM-DBD_x_UHRF1-TTD_model_0 align_chain=A haddock_matched=0 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_viewer.html (1.4 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:03<00:12,  3.12s/it]interfaces: 100%|██████████| 5/5 [00:06<00:00,  1.09s/it]interfaces: 100%|██████████| 5/5 [00:06<00:00,  1.22s/it]
-[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_2: dASA=2630.5A2 n_contacts=5538 min_dist=2.29A clash=1 interface_residues=113 pymol_pairs=30
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:02<00:11,  2.91s/it]interfaces:  40%|████      | 2/5 [00:03<00:03,  1.33s/it]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.03it/s]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.18s/it]
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_0: dASA=1867.7A2 n_contacts=3938 min_dist=2.65A clash=0 interface_residues=77 pymol_pairs=21
-[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_3: dASA=2433.4A2 n_contacts=5002 min_dist=2.30A clash=1 interface_residues=118 pymol_pairs=23
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_1: dASA=2457.9A2 n_contacts=5185 min_dist=2.35A clash=1 interface_residues=113 pymol_pairs=24
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_2: dASA=2630.5A2 n_contacts=5538 min_dist=2.29A clash=1 interface_residues=113 pymol_pairs=30
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_3: dASA=2433.4A2 n_contacts=5002 min_dist=2.30A clash=1 interface_residues=118 pymol_pairs=23
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_4: dASA=1796.7A2 n_contacts=3994 min_dist=2.38A clash=1 interface_residues=80 pymol_pairs=19
 [PYTHON-INFO] wrote 5 complex rows, 501 residue rows, 117 pymol pair rows
 [PYTHON-INFO] 42 interface residues, 42 residue pairs, 18 stabilizing pairs, 5 models used, 4 clashing models retained
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:15:44 exec=9.37s maxmem=114.7MB
+[PYTHON-INFO] 2026-10-14 17:02:22 exec=9.46s maxmem=114.5MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-NTD_x_UHRF1-PHD_model_0.pdb', 'TIM-NTD_x_UHRF1-PHD_model_1.pdb', 'TIM-NTD_x_UHRF1-PHD_model_2.pdb', 'TIM-NTD_x_UHRF1-PHD_model_3.pdb', 'TIM-NTD_x_UHRF1-PHD_model_4.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 0/5 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
 [PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-PHD_model_0 align_chain=A haddock_matched=0 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_viewer.html (2.2 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:05<00:22,  5.62s/it]interfaces: 100%|██████████| 5/5 [00:11<00:00,  1.99s/it]interfaces: 100%|██████████| 5/5 [00:11<00:00,  2.24s/it]
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:04<00:18,  4.73s/it]interfaces:  40%|████      | 2/5 [00:04<00:06,  2.05s/it]interfaces: 100%|██████████| 5/5 [00:09<00:00,  1.59s/it]interfaces: 100%|██████████| 5/5 [00:10<00:00,  2.01s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_2: dASA=1451.9A2 n_contacts=2859 min_dist=2.34A clash=1 interface_residues=73 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_3: dASA=1477.5A2 n_contacts=2584 min_dist=2.33A clash=1 interface_residues=74 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_0: dASA=1346.6A2 n_contacts=2506 min_dist=2.49A clash=1 interface_residues=75 pymol_pairs=12
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_1: dASA=1328.9A2 n_contacts=2649 min_dist=2.48A clash=1 interface_residues=72 pymol_pairs=13
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_3: dASA=1477.5A2 n_contacts=2584 min_dist=2.33A clash=1 interface_residues=74 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_4: dASA=1340.6A2 n_contacts=2263 min_dist=1.70A clash=1 interface_residues=83 pymol_pairs=11
 [PYTHON-INFO] wrote 5 complex rows, 377 residue rows, 70 pymol pair rows
 [PYTHON-INFO] 32 interface residues, 36 residue pairs, 6 stabilizing pairs, 5 models used, 5 clashing models retained
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:15:59 exec=14.22s maxmem=142.8MB
+[PYTHON-INFO] 2026-10-14 17:02:37 exec=14.33s maxmem=134.2MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-RING
-[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-RING_abin_emref_104 align_chain=A haddock_matched=0 exclude_clashes=False
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-NTD_x_UHRF1-RING_abin_emref_104.pdb', 'TIM-NTD_x_UHRF1-RING_abin_emref_140.pdb', 'TIM-NTD_x_UHRF1-RING_abin_emref_171.pdb', 'TIM-NTD_x_UHRF1-RING_abin_emref_83.pdb', 'TIM-NTD_x_UHRF1-RING_model_4.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_1_emref_1.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_1_emref_1.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_1_emref_1.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 6/11 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-RING_abin_emref_104 align_chain=A haddock_matched=6 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_viewer.html (4.4 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:07<01:11,  7.14s/it]interfaces:  18%|█▊        | 2/11 [00:07<00:29,  3.33s/it]interfaces:  27%|██▋       | 3/11 [00:08<00:16,  2.10s/it]interfaces:  36%|███▋      | 4/11 [00:08<00:09,  1.37s/it]interfaces:  45%|████▌     | 5/11 [00:12<00:14,  2.38s/it]interfaces:  55%|█████▍    | 6/11 [00:14<00:09,  1.97s/it]interfaces:  82%|████████▏ | 9/11 [00:19<00:03,  1.95s/it]interfaces:  91%|█████████ | 10/11 [00:21<00:01,  1.78s/it]interfaces: 100%|██████████| 11/11 [00:21<00:00,  1.39s/it]interfaces: 100%|██████████| 11/11 [00:21<00:00,  1.95s/it]
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:05<00:58,  5.88s/it]interfaces:  18%|█▊        | 2/11 [00:06<00:23,  2.57s/it]interfaces:  27%|██▋       | 3/11 [00:06<00:11,  1.49s/it]interfaces:  36%|███▋      | 4/11 [00:06<00:06,  1.02it/s]interfaces:  45%|████▌     | 5/11 [00:10<00:12,  2.06s/it]interfaces:  55%|█████▍    | 6/11 [00:11<00:08,  1.79s/it]interfaces:  64%|██████▎   | 7/11 [00:11<00:04,  1.25s/it]interfaces:  73%|███████▎  | 8/11 [00:12<00:03,  1.04s/it]interfaces:  82%|████████▏ | 9/11 [00:16<00:03,  1.81s/it]interfaces:  91%|█████████ | 10/11 [00:17<00:01,  1.64s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.20s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.59s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_104: dASA=1048.8A2 n_contacts=2061 min_dist=2.63A clash=0 interface_residues=67 pymol_pairs=11
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_171: dASA=1239.2A2 n_contacts=2435 min_dist=2.67A clash=0 interface_residues=77 pymol_pairs=17
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_83: dASA=1394.6A2 n_contacts=2810 min_dist=2.77A clash=0 interface_residues=89 pymol_pairs=21
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_140: dASA=1214.2A2 n_contacts=2493 min_dist=2.61A clash=0 interface_residues=79 pymol_pairs=11
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_83: dASA=1394.6A2 n_contacts=2810 min_dist=2.77A clash=0 interface_residues=89 pymol_pairs=21
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_171: dASA=1239.2A2 n_contacts=2435 min_dist=2.67A clash=0 interface_residues=77 pymol_pairs=17
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_model_4: dASA=1133.0A2 n_contacts=2405 min_dist=1.52A clash=1 interface_residues=85 pymol_pairs=9
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_1_emref_1: dASA=1144.2A2 n_contacts=2214 min_dist=2.71A clash=0 interface_residues=70 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_0_emref_1: dASA=1188.5A2 n_contacts=2238 min_dist=2.62A clash=0 interface_residues=71 pymol_pairs=11
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_1_emref_1: dASA=1144.2A2 n_contacts=2214 min_dist=2.71A clash=0 interface_residues=70 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_0_emref_1: dASA=1266.9A2 n_contacts=2403 min_dist=2.72A clash=0 interface_residues=75 pymol_pairs=11
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_1_emref_1: dASA=1155.5A2 n_contacts=2149 min_dist=2.65A clash=0 interface_residues=66 pymol_pairs=13
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1: dASA=1066.8A2 n_contacts=1762 min_dist=2.57A clash=0 interface_residues=70 pymol_pairs=7
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_1_emref_1: dASA=1344.9A2 n_contacts=2382 min_dist=2.61A clash=0 interface_residues=72 pymol_pairs=13
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1: dASA=1066.8A2 n_contacts=1762 min_dist=2.57A clash=0 interface_residues=70 pymol_pairs=7
 [PYTHON-INFO] wrote 11 complex rows, 821 residue rows, 140 pymol pair rows
 [PYTHON-INFO] 89 interface residues, 129 residue pairs, 0 stabilizing pairs, 11 models used, 1 clashing models retained
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:16:28 exec=27.97s maxmem=195.4MB
+[PYTHON-INFO] 2026-10-14 17:03:03 exec=25.26s maxmem=211.4MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA
-[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-SRA_abin_emref_19 align_chain=A haddock_matched=0 exclude_clashes=False
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-NTD_x_UHRF1-SRA_abin_emref_19.pdb', 'TIM-NTD_x_UHRF1-SRA_abin_emref_33.pdb', 'TIM-NTD_x_UHRF1-SRA_abin_emref_66.pdb', 'TIM-NTD_x_UHRF1-SRA_abin_emref_7.pdb', 'TIM-NTD_x_UHRF1-SRA_model_0.pdb', 'TIM-NTD_x_UHRF1-SRA_model_1.pdb', 'TIM-NTD_x_UHRF1-SRA_model_2.pdb', 'TIM-NTD_x_UHRF1-SRA_model_3.pdb', 'TIM-NTD_x_UHRF1-SRA_model_4.pdb', 'TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_1_emref_1.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 2/11 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-SRA_abin_emref_19 align_chain=A haddock_matched=2 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_viewer.html (5.0 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:09<01:33,  9.30s/it]interfaces:  18%|█▊        | 2/11 [00:10<00:39,  4.42s/it]interfaces:  27%|██▋       | 3/11 [00:10<00:19,  2.49s/it]interfaces:  36%|███▋      | 4/11 [00:10<00:11,  1.60s/it]interfaces:  45%|████▌     | 5/11 [00:16<00:18,  3.07s/it]interfaces:  73%|███████▎  | 8/11 [00:16<00:03,  1.24s/it]interfaces:  82%|████████▏ | 9/11 [00:23<00:05,  2.56s/it]interfaces:  91%|█████████ | 10/11 [00:25<00:02,  2.29s/it]interfaces: 100%|██████████| 11/11 [00:25<00:00,  2.30s/it]
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:07<01:15,  7.52s/it]interfaces:  18%|█▊        | 2/11 [00:07<00:28,  3.17s/it]interfaces:  27%|██▋       | 3/11 [00:07<00:14,  1.79s/it]interfaces:  36%|███▋      | 4/11 [00:07<00:08,  1.15s/it]interfaces:  45%|████▌     | 5/11 [00:13<00:16,  2.75s/it]interfaces:  64%|██████▎   | 7/11 [00:13<00:05,  1.38s/it]interfaces:  73%|███████▎  | 8/11 [00:14<00:03,  1.20s/it]interfaces:  82%|████████▏ | 9/11 [00:20<00:04,  2.46s/it]interfaces:  91%|█████████ | 10/11 [00:20<00:01,  1.88s/it]interfaces: 100%|██████████| 11/11 [00:21<00:00,  1.72s/it]interfaces: 100%|██████████| 11/11 [00:22<00:00,  2.03s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_33: dASA=1328.8A2 n_contacts=2234 min_dist=2.60A clash=0 interface_residues=75 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: dASA=1450.2A2 n_contacts=3062 min_dist=2.58A clash=0 interface_residues=98 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_7: dASA=1230.2A2 n_contacts=2697 min_dist=2.58A clash=0 interface_residues=85 pymol_pairs=17
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_66: dASA=1399.1A2 n_contacts=2615 min_dist=2.60A clash=0 interface_residues=94 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: dASA=1450.2A2 n_contacts=3062 min_dist=2.58A clash=0 interface_residues=98 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_0: dASA=3222.5A2 n_contacts=6109 min_dist=1.75A clash=1 interface_residues=186 pymol_pairs=31
-[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_2: dASA=3472.0A2 n_contacts=7102 min_dist=2.02A clash=1 interface_residues=185 pymol_pairs=39
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_1: dASA=3374.8A2 n_contacts=6511 min_dist=2.02A clash=1 interface_residues=171 pymol_pairs=36
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_2: dASA=3472.0A2 n_contacts=7102 min_dist=2.02A clash=1 interface_residues=185 pymol_pairs=39
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_0: dASA=3222.5A2 n_contacts=6109 min_dist=1.75A clash=1 interface_residues=186 pymol_pairs=31
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_3: dASA=3517.5A2 n_contacts=6856 min_dist=1.91A clash=1 interface_residues=182 pymol_pairs=38
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_4: dASA=3145.4A2 n_contacts=6410 min_dist=1.47A clash=1 interface_residues=186 pymol_pairs=40
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_1_emref_1: dASA=1187.2A2 n_contacts=1906 min_dist=2.58A clash=0 interface_residues=71 pymol_pairs=13
@@ -100,17 +234,43 @@ Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:17:02 exec=32.91s maxmem=227.6MB
+[PYTHON-INFO] 2026-10-14 17:03:36 exec=32.61s maxmem=219.4MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-NTD_x_UHRF1-TTD_model_0.pdb', 'TIM-NTD_x_UHRF1-TTD_model_1.pdb', 'TIM-NTD_x_UHRF1-TTD_model_2.pdb', 'TIM-NTD_x_UHRF1-TTD_model_3.pdb', 'TIM-NTD_x_UHRF1-TTD_model_4.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 0/5 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
 [PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-TTD_model_0 align_chain=A haddock_matched=0 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_viewer.html (2.5 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:06<00:27,  6.93s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.49s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.79s/it]
-[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_3: dASA=1082.2A2 n_contacts=1950 min_dist=2.05A clash=1 interface_residues=68 pymol_pairs=13
-[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_1: dASA=832.0A2 n_contacts=1585 min_dist=2.38A clash=1 interface_residues=69 pymol_pairs=6
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:06<00:25,  6.42s/it]interfaces:  40%|████      | 2/5 [00:06<00:08,  2.97s/it]interfaces: 100%|██████████| 5/5 [00:12<00:00,  2.20s/it]interfaces: 100%|██████████| 5/5 [00:12<00:00,  2.54s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_0: dASA=1195.2A2 n_contacts=2071 min_dist=2.38A clash=1 interface_residues=66 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_1: dASA=832.0A2 n_contacts=1585 min_dist=2.38A clash=1 interface_residues=69 pymol_pairs=6
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_3: dASA=1082.2A2 n_contacts=1950 min_dist=2.05A clash=1 interface_residues=68 pymol_pairs=13
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_2: dASA=1151.8A2 n_contacts=1894 min_dist=2.37A clash=1 interface_residues=74 pymol_pairs=9
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_4: dASA=2130.3A2 n_contacts=3890 min_dist=2.34A clash=1 interface_residues=106 pymol_pairs=20
 [PYTHON-INFO] wrote 5 complex rows, 383 residue rows, 65 pymol pair rows
@@ -118,51 +278,105 @@ Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:17:21 exec=17.51s maxmem=146.0MB
+[PYTHON-INFO] 2026-10-14 17:03:55 exec=17.39s maxmem=159.4MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL
-[PYTHON-INFO] structures=14 reference=TIM-NTD_x_UHRF1-UBL_abin_emref_135 align_chain=A haddock_matched=0 exclude_clashes=False
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-NTD_x_UHRF1-UBL_abin_emref_135.pdb', 'TIM-NTD_x_UHRF1-UBL_abin_emref_57.pdb', 'TIM-NTD_x_UHRF1-UBL_abin_emref_71.pdb', 'TIM-NTD_x_UHRF1-UBL_abin_emref_77.pdb', 'TIM-NTD_x_UHRF1-UBL_model_0.pdb', 'TIM-NTD_x_UHRF1-UBL_model_1.pdb', 'TIM-NTD_x_UHRF1-UBL_model_2.pdb', 'TIM-NTD_x_UHRF1-UBL_model_3.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1.pdb', 'TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_1_emref_1.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 6/14 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] structures=14 reference=TIM-NTD_x_UHRF1-UBL_abin_emref_135 align_chain=A haddock_matched=6 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_aligned.cif (14 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_viewer.html (5.2 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:06<01:24,  6.52s/it]interfaces:  14%|█▍        | 2/14 [00:06<00:33,  2.79s/it]interfaces:  21%|██▏       | 3/14 [00:06<00:17,  1.56s/it]interfaces:  36%|███▌      | 5/14 [00:12<00:19,  2.21s/it]interfaces:  43%|████▎     | 6/14 [00:12<00:12,  1.61s/it]interfaces:  50%|█████     | 7/14 [00:12<00:08,  1.26s/it]interfaces:  57%|█████▋    | 8/14 [00:13<00:05,  1.03it/s]interfaces:  64%|██████▍   | 9/14 [00:18<00:11,  2.36s/it]interfaces:  71%|███████▏  | 10/14 [00:18<00:06,  1.69s/it]interfaces:  93%|█████████▎| 13/14 [00:24<00:01,  1.88s/it]interfaces: 100%|██████████| 14/14 [00:25<00:00,  1.51s/it]interfaces: 100%|██████████| 14/14 [00:25<00:00,  1.79s/it]
+interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:06<01:24,  6.53s/it]interfaces:  14%|█▍        | 2/14 [00:06<00:33,  2.78s/it]interfaces:  36%|███▌      | 5/14 [00:11<00:16,  1.84s/it]interfaces:  43%|████▎     | 6/14 [00:11<00:11,  1.41s/it]interfaces:  64%|██████▍   | 9/14 [00:15<00:07,  1.47s/it]interfaces:  71%|███████▏  | 10/14 [00:15<00:04,  1.20s/it]interfaces:  86%|████████▌ | 12/14 [00:16<00:01,  1.26it/s]interfaces:  93%|█████████▎| 13/14 [00:20<00:01,  1.54s/it]interfaces: 100%|██████████| 14/14 [00:20<00:00,  1.29s/it]interfaces: 100%|██████████| 14/14 [00:20<00:00,  1.49s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_57: dASA=881.5A2 n_contacts=1548 min_dist=2.57A clash=0 interface_residues=53 pymol_pairs=13
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_77: dASA=899.1A2 n_contacts=1655 min_dist=2.65A clash=0 interface_residues=55 pymol_pairs=11
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: dASA=1229.5A2 n_contacts=2771 min_dist=2.66A clash=0 interface_residues=65 pymol_pairs=14
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_71: dASA=1317.7A2 n_contacts=2709 min_dist=2.57A clash=0 interface_residues=67 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: dASA=1252.0A2 n_contacts=2658 min_dist=1.63A clash=1 interface_residues=74 pymol_pairs=18
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: dASA=1229.5A2 n_contacts=2771 min_dist=2.66A clash=0 interface_residues=65 pymol_pairs=14
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_77: dASA=899.1A2 n_contacts=1655 min_dist=2.65A clash=0 interface_residues=55 pymol_pairs=11
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_1: dASA=1875.2A2 n_contacts=4017 min_dist=1.82A clash=1 interface_residues=95 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_3: dASA=1258.6A2 n_contacts=2861 min_dist=1.85A clash=1 interface_residues=72 pymol_pairs=15
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_2: dASA=1052.2A2 n_contacts=2151 min_dist=2.33A clash=1 interface_residues=66 pymol_pairs=15
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: dASA=1252.0A2 n_contacts=2658 min_dist=1.63A clash=1 interface_residues=74 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_0_emref_1: dASA=932.5A2 n_contacts=1797 min_dist=2.58A clash=0 interface_residues=60 pymol_pairs=9
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1: dASA=1213.7A2 n_contacts=2521 min_dist=2.63A clash=0 interface_residues=65 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_0_emref_1: dASA=1276.2A2 n_contacts=2425 min_dist=2.63A clash=0 interface_residues=68 pymol_pairs=17
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1: dASA=1299.8A2 n_contacts=2428 min_dist=2.60A clash=0 interface_residues=68 pymol_pairs=17
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1: dASA=1006.7A2 n_contacts=1731 min_dist=2.61A clash=0 interface_residues=55 pymol_pairs=15
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_1_emref_1: dASA=1228.3A2 n_contacts=2212 min_dist=2.72A clash=0 interface_residues=72 pymol_pairs=12
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1: dASA=1006.7A2 n_contacts=1731 min_dist=2.61A clash=0 interface_residues=55 pymol_pairs=15
 [PYTHON-INFO] wrote 14 complex rows, 935 residue rows, 208 pymol pair rows
 [PYTHON-INFO] 77 interface residues, 138 residue pairs, 0 stabilizing pairs, 14 models used, 4 clashing models retained
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:17:54 exec=31.95s maxmem=224.2MB
+[PYTHON-INFO] 2026-10-14 17:04:24 exec=28.78s maxmem=223.4MB
 Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA
-[PYTHON-INFO] structures=12 reference=TIM-PAB_x_UHRF1-SRA_abin_emref_156 align_chain=A haddock_matched=0 exclude_clashes=False
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-PAB_x_UHRF1-SRA_abin_emref_156.pdb', 'TIM-PAB_x_UHRF1-SRA_abin_emref_174.pdb', 'TIM-PAB_x_UHRF1-SRA_abin_emref_175.pdb', 'TIM-PAB_x_UHRF1-SRA_abin_emref_180.pdb', 'TIM-PAB_x_UHRF1-SRA_abin_emref_41.pdb', 'TIM-PAB_x_UHRF1-SRA_model_0.pdb', 'TIM-PAB_x_UHRF1-SRA_model_1.pdb', 'TIM-PAB_x_UHRF1-SRA_model_2.pdb', 'TIM-PAB_x_UHRF1-SRA_model_3.pdb', 'TIM-PAB_x_UHRF1-SRA_model_4.pdb', 'TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_0_emref_1.pdb', 'TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_1_emref_1.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 2/12 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] structures=12 reference=TIM-PAB_x_UHRF1-SRA_abin_emref_156 align_chain=A haddock_matched=2 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_aligned.cif (12 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_viewer.html (2.9 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/12 [00:00<?, ?it/s]interfaces:   8%|▊         | 1/12 [00:09<01:39,  9.05s/it]interfaces:  42%|████▏     | 5/12 [00:11<00:13,  1.96s/it]interfaces:  50%|█████     | 6/12 [00:12<00:09,  1.58s/it]interfaces:  67%|██████▋   | 8/12 [00:13<00:04,  1.17s/it]interfaces:  75%|███████▌  | 9/12 [00:14<00:03,  1.19s/it]interfaces:  83%|████████▎ | 10/12 [00:15<00:02,  1.15s/it]interfaces:  92%|█████████▏| 11/12 [00:16<00:00,  1.02it/s]interfaces: 100%|██████████| 12/12 [00:17<00:00,  1.09s/it]interfaces: 100%|██████████| 12/12 [00:17<00:00,  1.47s/it]
+interfaces:   0%|          | 0/12 [00:00<?, ?it/s]interfaces:   8%|▊         | 1/12 [00:04<00:47,  4.28s/it]interfaces:  17%|█▋        | 2/12 [00:04<00:18,  1.88s/it]interfaces:  25%|██▌       | 3/12 [00:04<00:09,  1.07s/it]interfaces:  42%|████▏     | 5/12 [00:06<00:07,  1.12s/it]interfaces:  50%|█████     | 6/12 [00:07<00:05,  1.18it/s]interfaces:  58%|█████▊    | 7/12 [00:07<00:03,  1.51it/s]interfaces:  67%|██████▋   | 8/12 [00:07<00:02,  1.56it/s]interfaces:  75%|███████▌  | 9/12 [00:09<00:02,  1.14it/s]interfaces:  83%|████████▎ | 10/12 [00:09<00:01,  1.51it/s]interfaces:  92%|█████████▏| 11/12 [00:11<00:01,  1.05s/it]interfaces: 100%|██████████| 12/12 [00:11<00:00,  1.31it/s]interfaces: 100%|██████████| 12/12 [00:11<00:00,  1.03it/s]
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_175: dASA=977.2A2 n_contacts=1704 min_dist=2.59A clash=0 interface_residues=54 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_156: dASA=973.0A2 n_contacts=1979 min_dist=2.54A clash=0 interface_residues=56 pymol_pairs=17
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_180: dASA=1164.8A2 n_contacts=1877 min_dist=2.55A clash=0 interface_residues=57 pymol_pairs=19
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_174: dASA=977.0A2 n_contacts=1878 min_dist=2.56A clash=0 interface_residues=53 pymol_pairs=16
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_156: dASA=973.0A2 n_contacts=1979 min_dist=2.54A clash=0 interface_residues=56 pymol_pairs=17
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_175: dASA=977.2A2 n_contacts=1704 min_dist=2.59A clash=0 interface_residues=54 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_0: dASA=1391.3A2 n_contacts=2482 min_dist=2.26A clash=1 interface_residues=70 pymol_pairs=14
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_2: dASA=1134.3A2 n_contacts=1896 min_dist=2.27A clash=1 interface_residues=65 pymol_pairs=8
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_1: dASA=1063.7A2 n_contacts=1820 min_dist=2.39A clash=1 interface_residues=64 pymol_pairs=8
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_0: dASA=1391.3A2 n_contacts=2482 min_dist=2.26A clash=1 interface_residues=70 pymol_pairs=14
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_41: dASA=1272.7A2 n_contacts=2540 min_dist=2.64A clash=0 interface_residues=72 pymol_pairs=17
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_3: dASA=1251.3A2 n_contacts=2163 min_dist=2.31A clash=1 interface_residues=68 pymol_pairs=9
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_4: dASA=1639.3A2 n_contacts=3280 min_dist=2.26A clash=1 interface_residues=86 pymol_pairs=17
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_3: dASA=1251.3A2 n_contacts=2163 min_dist=2.31A clash=1 interface_residues=68 pymol_pairs=9
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_0_emref_1: dASA=1272.8A2 n_contacts=2344 min_dist=2.59A clash=0 interface_residues=65 pymol_pairs=14
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_1_emref_1: dASA=1552.4A2 n_contacts=2805 min_dist=2.59A clash=0 interface_residues=79 pymol_pairs=16
 [PYTHON-INFO] wrote 12 complex rows, 789 residue rows, 165 pymol pair rows
@@ -170,29 +384,55 @@ Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:18:24 exec=21.86s maxmem=149.8MB
+[PYTHON-INFO] 2026-10-14 17:04:43 exec=17.58s maxmem=166.5MB
 Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD
+[PYTHON-INFO] loaded 230 HADDOCK rows from data/capri_ss_all.tsv
+[PYTHON-INFO] 1. Iteration PDB files: ['TIM-PAB_x_UHRF1-TTD_abin_emref_100.pdb', 'TIM-PAB_x_UHRF1-TTD_abin_emref_104.pdb', 'TIM-PAB_x_UHRF1-TTD_abin_emref_122.pdb', 'TIM-PAB_x_UHRF1-TTD_abin_emref_140.pdb', 'TIM-PAB_x_UHRF1-TTD_abin_emref_155.pdb', 'TIM-PAB_x_UHRF1-TTD_abin_emref_188.pdb', 'TIM-PAB_x_UHRF1-TTD_model_0.pdb', 'TIM-PAB_x_UHRF1-TTD_model_1.pdb', 'TIM-PAB_x_UHRF1-TTD_model_2.pdb', 'TIM-PAB_x_UHRF1-TTD_model_3.pdb', 'TIM-PAB_x_UHRF1-TTD_model_4.pdb']
+[PYTHON-INFO] 2. HADDOCK matching: 0/11 matched
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-Full_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-PAB_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-Full_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote HADDOCK score plot data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/haddock_scores/TIM-TOF1_x_UHRF1-UBL_haddock_scores.svg
 [PYTHON-INFO] structures=11 reference=TIM-PAB_x_UHRF1-TTD_abin_emref_100 align_chain=A haddock_matched=0 exclude_clashes=False
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_viewer.html (2.5 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8.0A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A; all clashes retained
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:03<00:31,  3.16s/it]interfaces:  18%|█▊        | 2/11 [00:03<00:12,  1.42s/it]interfaces:  45%|████▌     | 5/11 [00:05<00:05,  1.01it/s]interfaces:  64%|██████▎   | 7/11 [00:06<00:03,  1.30it/s]interfaces:  82%|████████▏ | 9/11 [00:08<00:01,  1.26it/s]interfaces:  91%|█████████ | 10/11 [00:09<00:00,  1.23it/s]interfaces: 100%|██████████| 11/11 [00:09<00:00,  1.19it/s]
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:03<00:33,  3.32s/it]interfaces:  18%|█▊        | 2/11 [00:03<00:14,  1.57s/it]interfaces:  45%|████▌     | 5/11 [00:06<00:06,  1.09s/it]interfaces:  64%|██████▎   | 7/11 [00:06<00:02,  1.49it/s]interfaces:  73%|███████▎  | 8/11 [00:06<00:01,  1.65it/s]interfaces:  82%|████████▏ | 9/11 [00:08<00:01,  1.19it/s]interfaces:  91%|█████████ | 10/11 [00:08<00:00,  1.36it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.23it/s]
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_100: dASA=990.7A2 n_contacts=1827 min_dist=2.57A clash=0 interface_residues=52 pymol_pairs=16
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_140: dASA=1237.1A2 n_contacts=2130 min_dist=2.56A clash=0 interface_residues=63 pymol_pairs=20
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_122: dASA=1147.7A2 n_contacts=2009 min_dist=2.60A clash=0 interface_residues=61 pymol_pairs=13
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_104: dASA=1503.4A2 n_contacts=3025 min_dist=2.55A clash=0 interface_residues=73 pymol_pairs=20
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_1: dASA=1660.6A2 n_contacts=3373 min_dist=2.29A clash=1 interface_residues=82 pymol_pairs=16
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_122: dASA=1147.7A2 n_contacts=2009 min_dist=2.60A clash=0 interface_residues=61 pymol_pairs=13
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_140: dASA=1237.1A2 n_contacts=2130 min_dist=2.56A clash=0 interface_residues=63 pymol_pairs=20
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_0: dASA=1202.6A2 n_contacts=2464 min_dist=2.13A clash=1 interface_residues=80 pymol_pairs=13
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_188: dASA=1058.1A2 n_contacts=1719 min_dist=2.57A clash=0 interface_residues=67 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_1: dASA=1660.6A2 n_contacts=3373 min_dist=2.29A clash=1 interface_residues=82 pymol_pairs=16
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_155: dASA=1204.7A2 n_contacts=2382 min_dist=2.64A clash=0 interface_residues=65 pymol_pairs=19
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_188: dASA=1058.1A2 n_contacts=1719 min_dist=2.57A clash=0 interface_residues=67 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_4: dASA=998.8A2 n_contacts=1876 min_dist=2.12A clash=1 interface_residues=67 pymol_pairs=9
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_2: dASA=1621.8A2 n_contacts=3385 min_dist=2.17A clash=1 interface_residues=90 pymol_pairs=15
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_3: dASA=778.6A2 n_contacts=1290 min_dist=2.61A clash=0 interface_residues=62 pymol_pairs=4
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_4: dASA=998.8A2 n_contacts=1876 min_dist=2.12A clash=1 interface_residues=67 pymol_pairs=9
 [PYTHON-INFO] wrote 11 complex rows, 762 residue rows, 155 pymol pair rows
 [PYTHON-INFO] 87 interface residues, 135 residue pairs, 0 stabilizing pairs, 11 models used, 4 clashing models retained
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_A_residue_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_B_pair_occupancy.svg
 [PYTHON-INFO] wrote data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_C_burial_vs_occupancy.svg
-[PYTHON-INFO] 2026-10-14 16:18:40 exec=14.97s maxmem=144.1MB
+[PYTHON-INFO] 2026-10-14 17:04:58 exec=14.22s maxmem=152.4MB
 ==> All tasks completed successfully!
