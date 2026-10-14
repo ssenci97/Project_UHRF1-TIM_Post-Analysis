@@ -55,6 +55,10 @@ if ! python3 -c "import Bio, matplotlib, numpy, yaml, tqdm, pymol" >/dev/null 2>
 fi
 
 ###################################### processing
+rm -r data/pdbs_by_group/*/haddock_analysis
+rm -r data/pdbs_by_group/*/interface_summary
+rm -r data/pdbs_by_group/*/interfaces
+
 START=$(date +%s)
 PROCESSED_GROUPS=0
 FAILED_GROUPS=0
