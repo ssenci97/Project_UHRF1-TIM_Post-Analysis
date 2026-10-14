@@ -1,0 +1,6 @@
+structure	source	clash	len_res_a	len_res_b	len_atoms_a	len_atoms_b	dASA_A2	initial_sasa_A2	frac_dASA	n_contacts	iface_res_a	iface_res_b	min_dist_A	contact_score
+TIM-NTD_x_UHRF1-PHD_model_0	model	1	463	57	3779	452	1346.58	32572.22	0.0413	2506	47	28	2.489	1448.9683
+TIM-NTD_x_UHRF1-PHD_model_1	model	1	463	57	3779	452	1328.92	31938.76	0.0416	2649	48	24	2.476	1578.4448
+TIM-NTD_x_UHRF1-PHD_model_2	model	1	463	57	3779	452	1451.91	34329.91	0.0423	2859	46	27	2.341	1617.7029
+TIM-NTD_x_UHRF1-PHD_model_3	model	1	463	57	3779	452	1477.53	32075.9	0.0461	2584	44	30	2.327	1539.0555
+TIM-NTD_x_UHRF1-PHD_model_4	model	1	463	57	3779	452	1340.61	31948.94	0.042	2263	48	35	1.697	1551.6122
