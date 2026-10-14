@@ -41,3 +41,30 @@ interface_summary:
   label_top: 10
   panel_gap: 0.14
   panel_row_gap: 0.25
+align_and_export:
+  input: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD
+  output: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary
+  ref: null
+  align_chain: A
+  workers: null
+  seed: 42
+  html: true
+  interfaces: true
+  plots: true
+  haddock_plots: true
+  capri_tsv: null
+  contact_cutoff: 8.0
+  score_cutoff: 12.0
+  block: 1000
+  hbond_cutoff: 3.5
+  salt_cutoff: 4.0
+  hydro_cutoff: 4.5
+  w_hbond: 1.0
+  w_salt: 1.5
+  w_hydro: 0.1
+  clash_cutoff: 2.5
+  exclude_clashes: false
+  occ_cutoff: 0.5
+  burial_cutoff: 0.25
+  top_residues: 15
+  top_pairs: 12
