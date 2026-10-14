@@ -7,78 +7,78 @@ Processing: data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_viewer.html (1.3 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/3 [00:00<?, ?it/s]interfaces:  33%|███▎      | 1/3 [00:03<00:06,  3.09s/it]interfaces:  67%|██████▋   | 2/3 [00:04<00:02,  2.21s/it]interfaces: 100%|██████████| 3/3 [00:04<00:00,  1.27s/it]interfaces: 100%|██████████| 3/3 [00:05<00:00,  1.70s/it]
+interfaces:   0%|          | 0/3 [00:00<?, ?it/s]interfaces:  33%|███▎      | 1/3 [00:03<00:06,  3.37s/it]interfaces:  67%|██████▋   | 2/3 [00:04<00:01,  1.94s/it]interfaces: 100%|██████████| 3/3 [00:04<00:00,  1.31s/it]interfaces: 100%|██████████| 3/3 [00:04<00:00,  1.62s/it]
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_model_0: dASA=1555.7A2 n_contacts=3301 min_dist=2.23A clash=1 interface_residues=82 pymol_pairs=16
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_13: dASA=1435.0A2 n_contacts=2743 min_dist=2.54A clash=0 interface_residues=76 pymol_pairs=16
 [PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_83: dASA=1434.4A2 n_contacts=2660 min_dist=2.57A clash=0 interface_residues=86 pymol_pairs=12
 [PYTHON-INFO] wrote 3 complex rows, 244 residue rows, 44 pymol pair rows
 [PYTHON-INFO] 34 interface residues, 26 residue pairs, 14 stabilizing pairs, 2 models used, 1 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces/TIM-DBD_x_UHRF1-SRA_summary.svg
-[PYTHON-INFO] 2026-10-14 14:57:38 exec=7.53s maxmem=109.8MB
+[PYTHON-INFO] 2026-10-14 15:09:06 exec=6.10s maxmem=107.9MB
 Processing: data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD
 [PYTHON-INFO] structures=5 reference=TIM-DBD_x_UHRF1-TTD_model_0 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_viewer.html (1.5 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:03<00:12,  3.09s/it]interfaces:  40%|████      | 2/5 [00:04<00:06,  2.32s/it]interfaces: 100%|██████████| 5/5 [00:06<00:00,  1.04it/s]interfaces: 100%|██████████| 5/5 [00:07<00:00,  1.46s/it]
-[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_0: dASA=1867.7A2 n_contacts=3938 min_dist=2.65A clash=0 interface_residues=77 pymol_pairs=21
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:02<00:11,  2.95s/it]interfaces:  40%|████      | 2/5 [00:03<00:04,  1.34s/it]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.12it/s]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.09s/it]
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_3: dASA=2433.4A2 n_contacts=5002 min_dist=2.30A clash=1 interface_residues=118 pymol_pairs=23
-[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_1: dASA=2457.9A2 n_contacts=5185 min_dist=2.35A clash=1 interface_residues=113 pymol_pairs=24
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_0: dASA=1867.7A2 n_contacts=3938 min_dist=2.65A clash=0 interface_residues=77 pymol_pairs=21
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_2: dASA=2630.5A2 n_contacts=5538 min_dist=2.29A clash=1 interface_residues=113 pymol_pairs=30
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_1: dASA=2457.9A2 n_contacts=5185 min_dist=2.35A clash=1 interface_residues=113 pymol_pairs=24
 [PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_4: dASA=1796.7A2 n_contacts=3994 min_dist=2.38A clash=1 interface_residues=80 pymol_pairs=19
 [PYTHON-INFO] wrote 5 complex rows, 501 residue rows, 117 pymol pair rows
 [PYTHON-INFO] 24 interface residues, 21 residue pairs, 19 stabilizing pairs, 1 models used, 4 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces/TIM-DBD_x_UHRF1-TTD_summary.svg
-[PYTHON-INFO] 2026-10-14 14:57:48 exec=8.99s maxmem=122.1MB
+[PYTHON-INFO] 2026-10-14 15:09:15 exec=7.56s maxmem=122.2MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD
 [PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-PHD_model_0 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces/TIM-NTD_x_UHRF1-PHD_viewer.html (2.2 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:05<00:21,  5.47s/it]interfaces:  40%|████      | 2/5 [00:06<00:07,  2.64s/it]interfaces: 100%|██████████| 5/5 [00:10<00:00,  1.87s/it]interfaces: 100%|██████████| 5/5 [00:10<00:00,  2.17s/it]
-[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_2: dASA=1451.9A2 n_contacts=2859 min_dist=2.34A clash=1 interface_residues=73 pymol_pairs=18
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:04<00:18,  4.72s/it]interfaces:  40%|████      | 2/5 [00:05<00:06,  2.12s/it]interfaces:  80%|████████  | 4/5 [00:05<00:00,  1.15it/s]interfaces: 100%|██████████| 5/5 [00:09<00:00,  1.89s/it]interfaces: 100%|██████████| 5/5 [00:09<00:00,  1.92s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_0: dASA=1346.6A2 n_contacts=2506 min_dist=2.49A clash=1 interface_residues=75 pymol_pairs=12
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_1: dASA=1328.9A2 n_contacts=2649 min_dist=2.48A clash=1 interface_residues=72 pymol_pairs=13
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_3: dASA=1477.5A2 n_contacts=2584 min_dist=2.33A clash=1 interface_residues=74 pymol_pairs=16
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_2: dASA=1451.9A2 n_contacts=2859 min_dist=2.34A clash=1 interface_residues=73 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_4: dASA=1340.6A2 n_contacts=2263 min_dist=1.70A clash=1 interface_residues=83 pymol_pairs=11
 [PYTHON-INFO] wrote 5 complex rows, 377 residue rows, 70 pymol pair rows
 [PYTHON-INFO] no models left after clash exclusion; skipping frequencies and summary
-[PYTHON-INFO] 2026-10-14 14:58:02 exec=13.33s maxmem=142.4MB
+[PYTHON-INFO] 2026-10-14 15:09:28 exec=12.40s maxmem=142.2MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-RING
 [PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-RING_abin_emref_104 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_viewer.html (4.4 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:06<01:03,  6.31s/it]interfaces:  18%|█▊        | 2/11 [00:06<00:26,  2.96s/it]interfaces:  27%|██▋       | 3/11 [00:07<00:13,  1.70s/it]interfaces:  45%|████▌     | 5/11 [00:12<00:12,  2.13s/it]interfaces:  55%|█████▍    | 6/11 [00:12<00:08,  1.63s/it]interfaces:  64%|██████▎   | 7/11 [00:12<00:04,  1.19s/it]interfaces:  73%|███████▎  | 8/11 [00:13<00:03,  1.18s/it]interfaces:  82%|████████▏ | 9/11 [00:18<00:04,  2.11s/it]interfaces:  91%|█████████ | 10/11 [00:18<00:01,  1.57s/it]interfaces: 100%|██████████| 11/11 [00:19<00:00,  1.38s/it]interfaces: 100%|██████████| 11/11 [00:19<00:00,  1.77s/it]
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:06<01:02,  6.24s/it]interfaces:  18%|█▊        | 2/11 [00:07<00:30,  3.39s/it]interfaces:  45%|████▌     | 5/11 [00:10<00:10,  1.74s/it]interfaces:  55%|█████▍    | 6/11 [00:11<00:07,  1.54s/it]interfaces:  73%|███████▎  | 8/11 [00:13<00:03,  1.15s/it]interfaces:  82%|████████▏ | 9/11 [00:16<00:03,  1.77s/it]interfaces:  91%|█████████ | 10/11 [00:17<00:01,  1.50s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.16s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.62s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_83: dASA=1394.6A2 n_contacts=2810 min_dist=2.77A clash=0 interface_residues=89 pymol_pairs=21
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_104: dASA=1048.8A2 n_contacts=2061 min_dist=2.63A clash=0 interface_residues=67 pymol_pairs=11
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_171: dASA=1239.2A2 n_contacts=2435 min_dist=2.67A clash=0 interface_residues=77 pymol_pairs=17
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_140: dASA=1214.2A2 n_contacts=2493 min_dist=2.61A clash=0 interface_residues=79 pymol_pairs=11
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_171: dASA=1239.2A2 n_contacts=2435 min_dist=2.67A clash=0 interface_residues=77 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_104: dASA=1048.8A2 n_contacts=2061 min_dist=2.63A clash=0 interface_residues=67 pymol_pairs=11
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_model_4: dASA=1133.0A2 n_contacts=2405 min_dist=1.52A clash=1 interface_residues=85 pymol_pairs=9
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_1_emref_1: dASA=1144.2A2 n_contacts=2214 min_dist=2.71A clash=0 interface_residues=70 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_0_emref_1: dASA=1188.5A2 n_contacts=2238 min_dist=2.62A clash=0 interface_residues=71 pymol_pairs=11
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_0_emref_1: dASA=1266.9A2 n_contacts=2403 min_dist=2.72A clash=0 interface_residues=75 pymol_pairs=11
-[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1: dASA=1066.8A2 n_contacts=1762 min_dist=2.57A clash=0 interface_residues=70 pymol_pairs=7
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_1_emref_1: dASA=1155.5A2 n_contacts=2149 min_dist=2.65A clash=0 interface_residues=66 pymol_pairs=13
 [PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_1_emref_1: dASA=1344.9A2 n_contacts=2382 min_dist=2.61A clash=0 interface_residues=72 pymol_pairs=13
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1: dASA=1066.8A2 n_contacts=1762 min_dist=2.57A clash=0 interface_residues=70 pymol_pairs=7
 [PYTHON-INFO] wrote 11 complex rows, 821 residue rows, 140 pymol pair rows
 [PYTHON-INFO] 76 interface residues, 120 residue pairs, 0 stabilizing pairs, 10 models used, 1 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces/TIM-NTD_x_UHRF1-RING_summary.svg
-[PYTHON-INFO] 2026-10-14 14:58:28 exec=25.77s maxmem=195.4MB
+[PYTHON-INFO] 2026-10-14 15:09:53 exec=24.45s maxmem=198.1MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA
 [PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-SRA_abin_emref_19 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_viewer.html (5.0 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:06<01:07,  6.76s/it]interfaces:  18%|█▊        | 2/11 [00:07<00:30,  3.37s/it]interfaces:  45%|████▌     | 5/11 [00:12<00:12,  2.10s/it]interfaces:  55%|█████▍    | 6/11 [00:13<00:08,  1.79s/it]interfaces:  64%|██████▎   | 7/11 [00:14<00:06,  1.50s/it]interfaces:  73%|███████▎  | 8/11 [00:14<00:03,  1.28s/it]interfaces:  82%|████████▏ | 9/11 [00:19<00:04,  2.14s/it]interfaces:  91%|█████████ | 10/11 [00:22<00:02,  2.35s/it]interfaces: 100%|██████████| 11/11 [00:22<00:00,  1.83s/it]interfaces: 100%|██████████| 11/11 [00:22<00:00,  2.06s/it]
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:07<01:13,  7.39s/it]interfaces:  18%|█▊        | 2/11 [00:08<00:32,  3.59s/it]interfaces:  27%|██▋       | 3/11 [00:09<00:20,  2.53s/it]interfaces:  45%|████▌     | 5/11 [00:13<00:13,  2.27s/it]interfaces:  55%|█████▍    | 6/11 [00:14<00:09,  1.89s/it]interfaces:  64%|██████▎   | 7/11 [00:15<00:05,  1.45s/it]interfaces:  73%|███████▎  | 8/11 [00:15<00:03,  1.08s/it]interfaces:  82%|████████▏ | 9/11 [00:19<00:04,  2.15s/it]interfaces:  91%|█████████ | 10/11 [00:22<00:02,  2.26s/it]interfaces: 100%|██████████| 11/11 [00:23<00:00,  1.80s/it]interfaces: 100%|██████████| 11/11 [00:23<00:00,  2.11s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_33: dASA=1328.8A2 n_contacts=2234 min_dist=2.60A clash=0 interface_residues=75 pymol_pairs=17
-[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_66: dASA=1399.1A2 n_contacts=2615 min_dist=2.60A clash=0 interface_residues=94 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: dASA=1450.2A2 n_contacts=3062 min_dist=2.58A clash=0 interface_residues=98 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_7: dASA=1230.2A2 n_contacts=2697 min_dist=2.58A clash=0 interface_residues=85 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: dASA=1450.2A2 n_contacts=3062 min_dist=2.58A clash=0 interface_residues=98 pymol_pairs=18
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_66: dASA=1399.1A2 n_contacts=2615 min_dist=2.60A clash=0 interface_residues=94 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_0: dASA=3222.5A2 n_contacts=6109 min_dist=1.75A clash=1 interface_residues=186 pymol_pairs=31
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_1: dASA=3374.8A2 n_contacts=6511 min_dist=2.02A clash=1 interface_residues=171 pymol_pairs=36
 [PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_2: dASA=3472.0A2 n_contacts=7102 min_dist=2.02A clash=1 interface_residues=185 pymol_pairs=39
@@ -89,61 +89,61 @@ Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA
 [PYTHON-INFO] wrote 11 complex rows, 1408 residue rows, 279 pymol pair rows
 [PYTHON-INFO] 77 interface residues, 81 residue pairs, 0 stabilizing pairs, 6 models used, 5 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces/TIM-NTD_x_UHRF1-SRA_summary.svg
-[PYTHON-INFO] 2026-10-14 14:59:00 exec=30.26s maxmem=225.3MB
+[PYTHON-INFO] 2026-10-14 15:10:25 exec=30.78s maxmem=225.3MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD
 [PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-TTD_model_0 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_aligned.cif (5 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces/TIM-NTD_x_UHRF1-TTD_viewer.html (2.5 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:06<00:25,  6.33s/it]interfaces:  40%|████      | 2/5 [00:07<00:09,  3.01s/it]interfaces:  60%|██████    | 3/5 [00:07<00:03,  1.78s/it]interfaces:  80%|████████  | 4/5 [00:07<00:01,  1.18s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.82s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.68s/it]
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:06<00:24,  6.24s/it]interfaces:  40%|████      | 2/5 [00:08<00:11,  3.95s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.23s/it]interfaces: 100%|██████████| 5/5 [00:13<00:00,  2.67s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_0: dASA=1195.2A2 n_contacts=2071 min_dist=2.38A clash=1 interface_residues=66 pymol_pairs=17
-[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_2: dASA=1151.8A2 n_contacts=1894 min_dist=2.37A clash=1 interface_residues=74 pymol_pairs=9
-[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_3: dASA=1082.2A2 n_contacts=1950 min_dist=2.05A clash=1 interface_residues=68 pymol_pairs=13
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_1: dASA=832.0A2 n_contacts=1585 min_dist=2.38A clash=1 interface_residues=69 pymol_pairs=6
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_3: dASA=1082.2A2 n_contacts=1950 min_dist=2.05A clash=1 interface_residues=68 pymol_pairs=13
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_2: dASA=1151.8A2 n_contacts=1894 min_dist=2.37A clash=1 interface_residues=74 pymol_pairs=9
 [PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_4: dASA=2130.3A2 n_contacts=3890 min_dist=2.34A clash=1 interface_residues=106 pymol_pairs=20
 [PYTHON-INFO] wrote 5 complex rows, 383 residue rows, 65 pymol pair rows
 [PYTHON-INFO] no models left after clash exclusion; skipping frequencies and summary
-[PYTHON-INFO] 2026-10-14 14:59:18 exec=16.56s maxmem=144.5MB
+[PYTHON-INFO] 2026-10-14 15:10:45 exec=18.36s maxmem=144.6MB
 Processing: data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL
 [PYTHON-INFO] structures=14 reference=TIM-NTD_x_UHRF1-UBL_abin_emref_135 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_aligned.cif (14 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_viewer.html (5.2 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:05<01:12,  5.60s/it]interfaces:  14%|█▍        | 2/14 [00:05<00:28,  2.40s/it]interfaces:  29%|██▊       | 4/14 [00:06<00:10,  1.02s/it]interfaces:  36%|███▌      | 5/14 [00:10<00:17,  1.91s/it]interfaces:  43%|████▎     | 6/14 [00:10<00:11,  1.39s/it]interfaces:  50%|█████     | 7/14 [00:10<00:07,  1.01s/it]interfaces:  57%|█████▋    | 8/14 [00:11<00:05,  1.10it/s]interfaces:  64%|██████▍   | 9/14 [00:15<00:09,  1.86s/it]interfaces:  71%|███████▏  | 10/14 [00:15<00:06,  1.54s/it]interfaces:  79%|███████▊  | 11/14 [00:16<00:03,  1.13s/it]interfaces:  86%|████████▌ | 12/14 [00:16<00:01,  1.20it/s]interfaces:  93%|█████████▎| 13/14 [00:20<00:01,  2.00s/it]interfaces: 100%|██████████| 14/14 [00:21<00:00,  1.50s/it]interfaces: 100%|██████████| 14/14 [00:21<00:00,  1.54s/it]
+interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:05<01:11,  5.52s/it]interfaces:  14%|█▍        | 2/14 [00:06<00:37,  3.13s/it]interfaces:  21%|██▏       | 3/14 [00:07<00:19,  1.80s/it]interfaces:  36%|███▌      | 5/14 [00:10<00:15,  1.78s/it]interfaces:  43%|████▎     | 6/14 [00:10<00:10,  1.31s/it]interfaces:  50%|█████     | 7/14 [00:10<00:06,  1.05it/s]interfaces:  57%|█████▋    | 8/14 [00:12<00:05,  1.01it/s]interfaces:  64%|██████▍   | 9/14 [00:16<00:09,  1.99s/it]interfaces:  71%|███████▏  | 10/14 [00:17<00:06,  1.68s/it]interfaces:  86%|████████▌ | 12/14 [00:17<00:02,  1.03s/it]interfaces:  93%|█████████▎| 13/14 [00:22<00:01,  1.82s/it]interfaces: 100%|██████████| 14/14 [00:22<00:00,  1.57s/it]interfaces: 100%|██████████| 14/14 [00:23<00:00,  1.67s/it]
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_57: dASA=881.5A2 n_contacts=1548 min_dist=2.57A clash=0 interface_residues=53 pymol_pairs=13
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: dASA=1229.5A2 n_contacts=2771 min_dist=2.66A clash=0 interface_residues=65 pymol_pairs=14
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_71: dASA=1317.7A2 n_contacts=2709 min_dist=2.57A clash=0 interface_residues=67 pymol_pairs=18
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: dASA=1229.5A2 n_contacts=2771 min_dist=2.66A clash=0 interface_residues=65 pymol_pairs=14
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_77: dASA=899.1A2 n_contacts=1655 min_dist=2.65A clash=0 interface_residues=55 pymol_pairs=11
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_1: dASA=1875.2A2 n_contacts=4017 min_dist=1.82A clash=1 interface_residues=95 pymol_pairs=18
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: dASA=1252.0A2 n_contacts=2658 min_dist=1.63A clash=1 interface_residues=74 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_2: dASA=1052.2A2 n_contacts=2151 min_dist=2.33A clash=1 interface_residues=66 pymol_pairs=15
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: dASA=1252.0A2 n_contacts=2658 min_dist=1.63A clash=1 interface_residues=74 pymol_pairs=18
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_3: dASA=1258.6A2 n_contacts=2861 min_dist=1.85A clash=1 interface_residues=72 pymol_pairs=15
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1: dASA=1213.7A2 n_contacts=2521 min_dist=2.63A clash=0 interface_residues=65 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_0_emref_1: dASA=932.5A2 n_contacts=1797 min_dist=2.58A clash=0 interface_residues=60 pymol_pairs=9
-[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1: dASA=1299.8A2 n_contacts=2428 min_dist=2.60A clash=0 interface_residues=68 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1: dASA=1213.7A2 n_contacts=2521 min_dist=2.63A clash=0 interface_residues=65 pymol_pairs=16
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_0_emref_1: dASA=1276.2A2 n_contacts=2425 min_dist=2.63A clash=0 interface_residues=68 pymol_pairs=17
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1: dASA=1299.8A2 n_contacts=2428 min_dist=2.60A clash=0 interface_residues=68 pymol_pairs=17
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1: dASA=1006.7A2 n_contacts=1731 min_dist=2.61A clash=0 interface_residues=55 pymol_pairs=15
 [PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_1_emref_1: dASA=1228.3A2 n_contacts=2212 min_dist=2.72A clash=0 interface_residues=72 pymol_pairs=12
 [PYTHON-INFO] wrote 14 complex rows, 935 residue rows, 208 pymol pair rows
 [PYTHON-INFO] 63 interface residues, 96 residue pairs, 0 stabilizing pairs, 10 models used, 4 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces/TIM-NTD_x_UHRF1-UBL_summary.svg
-[PYTHON-INFO] 2026-10-14 14:59:48 exec=29.34s maxmem=224.5MB
+[PYTHON-INFO] 2026-10-14 15:11:17 exec=30.68s maxmem=226.9MB
 Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA
 [PYTHON-INFO] structures=12 reference=TIM-PAB_x_UHRF1-SRA_abin_emref_156 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_aligned.cif (12 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_viewer.html (2.9 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/12 [00:00<?, ?it/s]interfaces:   8%|▊         | 1/12 [00:04<00:44,  4.08s/it]interfaces:  17%|█▋        | 2/12 [00:04<00:21,  2.20s/it]interfaces:  25%|██▌       | 3/12 [00:05<00:11,  1.28s/it]interfaces:  42%|████▏     | 5/12 [00:07<00:07,  1.09s/it]interfaces:  50%|█████     | 6/12 [00:07<00:05,  1.04it/s]interfaces:  58%|█████▊    | 7/12 [00:08<00:04,  1.14it/s]interfaces:  67%|██████▋   | 8/12 [00:08<00:02,  1.38it/s]interfaces:  75%|███████▌  | 9/12 [00:09<00:02,  1.27it/s]interfaces:  83%|████████▎ | 10/12 [00:09<00:01,  1.67it/s]interfaces:  92%|█████████▏| 11/12 [00:11<00:00,  1.12it/s]interfaces: 100%|██████████| 12/12 [00:12<00:00,  1.23it/s]interfaces: 100%|██████████| 12/12 [00:12<00:00,  1.01s/it]
+interfaces:   0%|          | 0/12 [00:00<?, ?it/s]interfaces:   8%|▊         | 1/12 [00:03<00:41,  3.76s/it]interfaces:  25%|██▌       | 3/12 [00:03<00:09,  1.05s/it]interfaces:  33%|███▎      | 4/12 [00:04<00:06,  1.29it/s]interfaces:  42%|████▏     | 5/12 [00:06<00:08,  1.15s/it]interfaces:  50%|█████     | 6/12 [00:07<00:06,  1.11s/it]interfaces:  67%|██████▋   | 8/12 [00:07<00:02,  1.56it/s]interfaces:  75%|███████▌  | 9/12 [00:08<00:02,  1.43it/s]interfaces:  83%|████████▎ | 10/12 [00:08<00:01,  1.63it/s]interfaces:  92%|█████████▏| 11/12 [00:10<00:00,  1.21it/s]interfaces: 100%|██████████| 12/12 [00:10<00:00,  1.22it/s]interfaces: 100%|██████████| 12/12 [00:10<00:00,  1.10it/s]
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_156: dASA=973.0A2 n_contacts=1979 min_dist=2.54A clash=0 interface_residues=56 pymol_pairs=17
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_180: dASA=1164.8A2 n_contacts=1877 min_dist=2.55A clash=0 interface_residues=57 pymol_pairs=19
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_175: dASA=977.2A2 n_contacts=1704 min_dist=2.59A clash=0 interface_residues=54 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_180: dASA=1164.8A2 n_contacts=1877 min_dist=2.55A clash=0 interface_residues=57 pymol_pairs=19
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_174: dASA=977.0A2 n_contacts=1878 min_dist=2.56A clash=0 interface_residues=53 pymol_pairs=16
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_0: dASA=1391.3A2 n_contacts=2482 min_dist=2.26A clash=1 interface_residues=70 pymol_pairs=14
-[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_2: dASA=1134.3A2 n_contacts=1896 min_dist=2.27A clash=1 interface_residues=65 pymol_pairs=8
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_1: dASA=1063.7A2 n_contacts=1820 min_dist=2.39A clash=1 interface_residues=64 pymol_pairs=8
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_2: dASA=1134.3A2 n_contacts=1896 min_dist=2.27A clash=1 interface_residues=65 pymol_pairs=8
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_41: dASA=1272.7A2 n_contacts=2540 min_dist=2.64A clash=0 interface_residues=72 pymol_pairs=17
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_3: dASA=1251.3A2 n_contacts=2163 min_dist=2.31A clash=1 interface_residues=68 pymol_pairs=9
 [PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_4: dASA=1639.3A2 n_contacts=3280 min_dist=2.26A clash=1 interface_residues=86 pymol_pairs=17
@@ -152,27 +152,27 @@ Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA
 [PYTHON-INFO] wrote 12 complex rows, 789 residue rows, 165 pymol pair rows
 [PYTHON-INFO] 60 interface residues, 85 residue pairs, 1 stabilizing pairs, 7 models used, 5 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces/TIM-PAB_x_UHRF1-SRA_summary.svg
-[PYTHON-INFO] 2026-10-14 15:00:07 exec=17.41s maxmem=151.1MB
+[PYTHON-INFO] 2026-10-14 15:11:33 exec=14.79s maxmem=148.9MB
 Processing: data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD
 [PYTHON-INFO] structures=11 reference=TIM-PAB_x_UHRF1-TTD_abin_emref_100 align_chain=A
 [PYTHON-INFO] wrote multi-model mmCIF data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_aligned.cif (11 models)
 [PYTHON-INFO] wrote manifest data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_manifest.tsv
 [PYTHON-INFO] wrote standalone viewer data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_viewer.html (2.5 MB)
 [PYTHON-INFO] interfaces: workers=4 contact_cutoff=8A hbond_cutoff=3.5A salt_cutoff=4.0A hydro_cutoff=4.5A clash_cutoff=2.5A
-interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:03<00:32,  3.23s/it]interfaces:  18%|█▊        | 2/11 [00:03<00:14,  1.60s/it]interfaces:  27%|██▋       | 3/11 [00:04<00:09,  1.24s/it]interfaces:  36%|███▋      | 4/11 [00:04<00:06,  1.10it/s]interfaces:  45%|████▌     | 5/11 [00:05<00:04,  1.27it/s]interfaces:  55%|█████▍    | 6/11 [00:05<00:02,  1.78it/s]interfaces:  64%|██████▎   | 7/11 [00:06<00:02,  1.56it/s]interfaces:  73%|███████▎  | 8/11 [00:06<00:01,  1.74it/s]interfaces:  82%|████████▏ | 9/11 [00:08<00:01,  1.32it/s]interfaces:  91%|█████████ | 10/11 [00:08<00:00,  1.71it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.64it/s]interfaces: 100%|██████████| 11/11 [00:09<00:00,  1.19it/s]
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_140: dASA=1237.1A2 n_contacts=2130 min_dist=2.56A clash=0 interface_residues=63 pymol_pairs=20
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_104: dASA=1503.4A2 n_contacts=3025 min_dist=2.55A clash=0 interface_residues=73 pymol_pairs=20
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:03<00:34,  3.50s/it]interfaces:  45%|████▌     | 5/11 [00:05<00:05,  1.00it/s]interfaces:  55%|█████▍    | 6/11 [00:05<00:04,  1.24it/s]interfaces:  64%|██████▎   | 7/11 [00:06<00:03,  1.19it/s]interfaces:  73%|███████▎  | 8/11 [00:07<00:01,  1.52it/s]interfaces:  82%|████████▏ | 9/11 [00:07<00:01,  1.44it/s]interfaces:  91%|█████████ | 10/11 [00:07<00:00,  1.82it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.56it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.24it/s]
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_100: dASA=990.7A2 n_contacts=1827 min_dist=2.57A clash=0 interface_residues=52 pymol_pairs=16
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_104: dASA=1503.4A2 n_contacts=3025 min_dist=2.55A clash=0 interface_residues=73 pymol_pairs=20
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_140: dASA=1237.1A2 n_contacts=2130 min_dist=2.56A clash=0 interface_residues=63 pymol_pairs=20
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_122: dASA=1147.7A2 n_contacts=2009 min_dist=2.60A clash=0 interface_residues=61 pymol_pairs=13
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_1: dASA=1660.6A2 n_contacts=3373 min_dist=2.29A clash=1 interface_residues=82 pymol_pairs=16
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_0: dASA=1202.6A2 n_contacts=2464 min_dist=2.13A clash=1 interface_residues=80 pymol_pairs=13
-[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_155: dASA=1204.7A2 n_contacts=2382 min_dist=2.64A clash=0 interface_residues=65 pymol_pairs=19
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_1: dASA=1660.6A2 n_contacts=3373 min_dist=2.29A clash=1 interface_residues=82 pymol_pairs=16
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_188: dASA=1058.1A2 n_contacts=1719 min_dist=2.57A clash=0 interface_residues=67 pymol_pairs=10
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_155: dASA=1204.7A2 n_contacts=2382 min_dist=2.64A clash=0 interface_residues=65 pymol_pairs=19
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_2: dASA=1621.8A2 n_contacts=3385 min_dist=2.17A clash=1 interface_residues=90 pymol_pairs=15
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_3: dASA=778.6A2 n_contacts=1290 min_dist=2.61A clash=0 interface_residues=62 pymol_pairs=4
 [PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_4: dASA=998.8A2 n_contacts=1876 min_dist=2.12A clash=1 interface_residues=67 pymol_pairs=9
 [PYTHON-INFO] wrote 11 complex rows, 762 residue rows, 155 pymol pair rows
 [PYTHON-INFO] 73 interface residues, 92 residue pairs, 0 stabilizing pairs, 7 models used, 4 clash-excluded
 [PYTHON-INFO] wrote summary panel data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces/TIM-PAB_x_UHRF1-TTD_summary.svg
-[PYTHON-INFO] 2026-10-14 15:00:23 exec=14.73s maxmem=150.8MB
+[PYTHON-INFO] 2026-10-14 15:11:48 exec=12.17s maxmem=147.9MB
 ==> All tasks completed successfully!

@@ -569,13 +569,17 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
     occ_c, bur_c = params["occ_cutoff"], params["burial_cutoff"]
     R = res_recs[:params["top_residues"]]
     P = pair_recs[:params["top_pairs"]]
-    ps = params["panel_size"]
-    fig = plt.figure(figsize=(4 * ps, 2.8 * ps))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1.0, 1.15, 0.95], left=0.08, right=0.98,
-                          top=0.88, bottom=0.14, wspace=0.45)
+    nrows = max(len(R), len(P), 1)
 
-    # A: residue occupancy heatmap by type, with burial bars alongside
-    sa = gs[0].subgridspec(1, 2, width_ratios=[3, 1], wspace=0.04)
+    # Size from content: width from label lengths, height from row count
+    fig_w = 15.5
+    fig_h = max(5.5, 0.36 * nrows + 2.4)
+    fig = plt.figure(figsize=(fig_w, fig_h))
+    gs = fig.add_gridspec(1, 3, width_ratios=[1.05, 1.35, 0.95], left=0.075, right=0.985,
+                          top=0.86, bottom=0.11, wspace=0.22)
+
+    # A: residue occupancy heatmap, with burial strip beside it
+    sa = gs[0].subgridspec(1, 2, width_ratios=[3.0, 0.9], wspace=0.03)
     axh = fig.add_subplot(sa[0]); axb = fig.add_subplot(sa[1], sharey=axh)
     if R:
         M = np.array([[d["occ"][t] for t in TYPES] for d in R])
@@ -598,25 +602,27 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
         axb.barh(range(len(R)), bur, height=0.7, color="0.6")
         axb.axvline(bur_c, ls="--", color="0.2", lw=0.8)
         axb.set_xlim(0, 1); axb.set_xticks([0, 0.5, 1])
-        axb.tick_params(axis="x", labelsize=7); axb.tick_params(axis="y", left=False, labelleft=False)
-        axb.xaxis.tick_top(); axb.set_xlabel("rel. burial", fontsize=7, labelpad=4)
+        axb.tick_params(axis="x", labelsize=7)
+        axb.tick_params(axis="y", left=False, labelleft=False)
+        axb.xaxis.tick_top()
+        axb.set_xlabel("rel. burial", fontsize=7, labelpad=4)
         axb.xaxis.set_label_position("top")
     else:
         _empty(axh, "no inter-chain interactions detected")
         axb.set_axis_off()
-    axh.set_title("A. Residue occupancy by type", loc="left", fontsize=9, pad=34)
+    axh.set_title("A. Residue occupancy by type", loc="left", fontsize=9, pad=40)
 
-    # B: pair occupancy as lollipops, one marker per type; grey bar = any type
+    # B: pair occupancy. Grey bar = any type; thin colored bars = each type at its own occupancy.
     axp = fig.add_subplot(gs[1])
     if P:
         ys = np.arange(len(P))[::-1]
+        offsets = {"hbond": 0.19, "salt": 0.0, "hydro": -0.19}
         for d, y in zip(P, ys):
-            axp.hlines(y, 0, d["any"], color="0.85", lw=7, zorder=1)
-            for j, t in enumerate(TYPES):
+            axp.barh(y, d["any"], height=0.62, color="0.88", zorder=1)
+            for t in TYPES:
                 if d["occ"][t] > 0:
-                    axp.scatter(d["occ"][t], y + (j - 1) * 0.2, s=34, marker=TYPE_MARKER[t],
-                                color=TYPE_COLOR[t], edgecolor="white", lw=0.4, zorder=3)
-            axp.text(min(d["any"] + 0.02, 1.03), y, f"{d['any']:.0%}", va="center", fontsize=7)
+                    axp.barh(y + offsets[t], d["occ"][t], height=0.15, color=TYPE_COLOR[t], zorder=2)
+            axp.text(d["any"] + 0.015, y, f"{d['any']:.0%}", va="center", fontsize=7)
         axp.set_yticks(ys)
         axp.set_yticklabels([pair_label(d["key"]) for d in P], fontsize=7.5)
         for tl, d in zip(axp.get_yticklabels(), P):
@@ -627,10 +633,10 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
         axp.set_xlabel("occupancy (fraction of models)", fontsize=8)
         axp.grid(axis="x", alpha=0.25, lw=0.5)
         axp.legend(handles=_type_handles(extra_any=True), fontsize=7, ncol=4, frameon=False,
-                   loc="upper center", bbox_to_anchor=(0.45, -0.14))
+                   loc="lower left", bbox_to_anchor=(0.0, 1.0))
     else:
         _empty(axp, "no residue pairs detected")
-    axp.set_title("B. Residue pairs: which interactions persist", loc="left", fontsize=9)
+    axp.set_title("B. Residue pairs: which interactions persist", loc="left", fontsize=9, pad=28)
 
     # C: residue persistence vs burial; shaded quadrant = frequent and buried
     axs = fig.add_subplot(gs[2])
@@ -638,7 +644,9 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
     if pts:
         rng = np.random.default_rng(params["seed"])
         ymax = max(0.5, max(d["burial"] for d in pts)) + 0.08
-        axs.add_patch(Rectangle((occ_c, bur_c), 1.1 - occ_c, ymax - bur_c, color="#2e7d32", alpha=0.08, lw=0, zorder=0))
+        xmax = 1.32
+        axs.add_patch(Rectangle((occ_c, bur_c), xmax - occ_c, ymax - bur_c,
+                                color="#2e7d32", alpha=0.08, lw=0, zorder=0))
         axs.axvline(occ_c, ls="--", color="0.4", lw=0.8)
         axs.axhline(bur_c, ls="--", color="0.4", lw=0.8)
         for d in pts:
@@ -649,9 +657,10 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
         stab = sorted((d for d in pts if d["any"] >= occ_c and d["burial"] >= bur_c),
                       key=lambda d: (-d["any"], -d["burial"]))
         for d in stab[:8]:
-            axs.annotate(lab(d["key"]), (d["any"], d["burial"]), xytext=(4, 3),
+            axs.annotate(lab(d["key"]), (d["any"], d["burial"]), xytext=(5, 2),
                          textcoords="offset points", fontsize=6.5)
-        axs.set_xlim(-0.05, 1.1); axs.set_ylim(0, ymax)
+        axs.set_xlim(-0.05, xmax); axs.set_ylim(0, ymax)
+        axs.set_xticks([0, 0.25, 0.5, 0.75, 1])
         axs.set_xlabel("occupancy of any interaction", fontsize=8)
         axs.set_ylabel("mean rel. dSASA (burial)", fontsize=8)
         axs.tick_params(labelsize=7); axs.grid(alpha=0.25, lw=0.5)
@@ -659,11 +668,11 @@ def plot_summary(res_recs, pair_recs, n_incl, n_excl, title, out_path):
         axs.legend(handles=_type_handles(), fontsize=7, frameon=False, loc="upper left")
     else:
         _empty(axs, "no burial data")
-    axs.set_title("C. Residues: frequent and buried (shaded)", loc="left", fontsize=9)
+    axs.set_title("C. Residues: frequent and buried (shaded)", loc="left", fontsize=9, pad=28)
 
     excl = f", {n_excl} clash-excluded" if n_excl else ""
     fig.suptitle(f"{title}: persistent interface interactions over {n_incl} models{excl}", fontsize=12)
-    fig.text(0.08, 0.03,
+    fig.text(0.075, 0.025,
              "Occupancy = fraction of models in which the interaction is detected. Burial = mean relative dSASA "
              f"over models. Bold pair labels: occupancy ≥ {occ_c} and mean burial ≥ {bur_c}. "
              "Dominant type = type with the highest occupancy.", fontsize=7, color="0.3")
