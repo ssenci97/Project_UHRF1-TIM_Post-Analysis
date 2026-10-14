@@ -16,7 +16,7 @@ haddock_analysis:
 interface_analysis:
   input: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD
   output: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces
-  workers: 4
+  workers: 8
   seed: 42
   contact_cutoff: 8.0
   score_cutoff: 12.0

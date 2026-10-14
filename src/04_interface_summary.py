@@ -8,6 +8,7 @@ Args:
 import argparse
 import csv
 import datetime
+import fitz
 import resource
 import time
 from collections import defaultdict
@@ -77,11 +78,8 @@ def style_axis(ax):
     ax.spines["right"].set_visible(False)
 def new_figure(size=FIG):
     return plt.subplots(figsize=size, layout="constrained")
-def finish_figure(fig, path, rasters):
+def finish_figure(fig, path):
     fig.savefig(path, format="pdf", bbox_inches="tight")
-    fig.set_dpi(DPI)
-    fig.canvas.draw()
-    rasters.append(np.asarray(fig.canvas.buffer_rgba()).copy())
     plt.close(fig)
     print(f"[PYTHON-INFO] wrote {path}")
 ###################################### aggregation
@@ -149,7 +147,7 @@ def aggregate(complex_rows, residue_rows, pair_rows, params):
     pairs.sort(key=lambda r: (-r["contact"], -r["score"]))
     return residues, pairs, contact_models, sources, n_models
 ###################################### plot A contact map summed over models
-def plot_contact_map(contact_models, min_models, n_models, stats, rasters, path):
+def plot_contact_map(contact_models, min_models, n_models, stats, path):
     counts = {k: len(v) for k, v in contact_models.items() if len(v) >= min_models}
     rows = sorted({k[:3] for k in counts}, key=lambda k: k[1])
     cols = sorted({k[3:] for k in counts}, key=lambda k: k[1])
@@ -185,9 +183,9 @@ def plot_contact_map(contact_models, min_models, n_models, stats, rasters, path)
     colorbar.set_ticks([1 / 6, 0.5, 5 / 6])
     colorbar.set_ticklabels(["Low", "Medium", "High"])
     colorbar.ax.tick_params(labelsize=SMALL_FONT, length=2)
-    finish_figure(fig, path, rasters)
+    finish_figure(fig, path)
 ###################################### plot B complex stability
-def plot_complex(complexes, sources, params, rasters, path):
+def plot_complex(complexes, sources, params, path):
     fig, ax = new_figure()
     colors = {s: SOURCE_COLORS[i % len(SOURCE_COLORS)] for i, s in enumerate(sources)}
     for s in sources:
@@ -199,9 +197,9 @@ def plot_complex(complexes, sources, params, rasters, path):
     ax.grid(alpha=0.2, lw=0.5)
     style_axis(ax)
     ax.legend(frameon=False, fontsize=SMALL_FONT, handletextpad=0.3, markerscale=1.2)
-    finish_figure(fig, path, rasters)
+    finish_figure(fig, path)
 ###################################### plot C burial vs contact occupancy
-def plot_scatter(residues, n_models, params, stats, rasters, path):
+def plot_scatter(residues, n_models, params, stats, path):
     fig, ax = new_figure()
     points = [r for r in residues if np.isfinite(r["burial"])]
     oc, bc = params["occ_cutoff"], params["burial_cutoff"]
@@ -230,10 +228,10 @@ def plot_scatter(residues, n_models, params, stats, rasters, path):
     type_legend = ax.legend(handles=type_handles(), fontsize=SMALL_FONT - 1, frameon=False, loc="upper left", borderaxespad=0.2, handletextpad=0.3)
     ax.add_artist(type_legend)
     ax.legend(handles=size_handles, title="Models", title_fontsize=SMALL_FONT, fontsize=SMALL_FONT - 1, frameon=False, loc="lower right", borderaxespad=0.2, labelspacing=0.4)
-    finish_figure(fig, path, rasters)
+    finish_figure(fig, path)
 ###################################### plot D residue occupancy
-def plot_residues(residues, top, n_models, stats, rasters, path):
-    blocks = [[r for r in residues if r["key"][0] == chain][:top] for chain in ("A", "B")]
+def plot_residues(residues, top, n_models, stats, path):
+    blocks = [[r for r in residues if r["key"][0] == chain][:top] if top else [r for r in residues if r["key"][0] == chain] for chain in ("A", "B")]
     rows = blocks[0] + [None] + blocks[1]
     labels = [TYPE_LABEL[k] for k in TYPES] + ["Contact"]
     matrix = np.full((len(rows), len(labels)), np.nan)
@@ -242,7 +240,7 @@ def plot_residues(residues, top, n_models, stats, rasters, path):
             matrix[i] = [r["occ"][k] for k in TYPES] + [r["contact"]]
     cmap = plt.get_cmap("Blues").copy()
     cmap.set_bad("white")
-    height = FIG[1] * len(rows) / (2 * BASE_TOP + 1)
+    height = max(FIG[1], 0.22 * len(rows) + 1.4)
     fig, ax = new_figure((FIG[0], height))
     ax.imshow(matrix, cmap=cmap, vmin=0, vmax=1, aspect="auto", interpolation="nearest")
     for i, j in zip(*np.where(np.isfinite(matrix))):
@@ -257,13 +255,13 @@ def plot_residues(residues, top, n_models, stats, rasters, path):
     ax.set_title(f"Residue occupancy · {n_models} models\n{stats['label']}", fontsize=FONT, loc="left")
     for spine in ax.spines.values():
         spine.set_visible(False)
-    finish_figure(fig, path, rasters)
+    finish_figure(fig, path)
 ###################################### plot E pair occupancy
-def plot_pairs(pairs, top, n_models, stats, rasters, path):
-    selected = pairs
+def plot_pairs(pairs, top, n_models, stats, path):
+    selected = pairs[:top] if top else pairs
     midpoint = (len(selected) + 1) // 2
     blocks = [selected[:midpoint], selected[midpoint:]]
-    height = FIG[1] * max(1, max(len(block) for block in blocks)) / BASE_TOP
+    height = max(FIG[1], 0.24 * max(1, max(len(block) for block in blocks)) + 1.5)
     fig, axes = plt.subplots(1, 2, figsize=(FIG[0] * 2, height), layout="constrained", squeeze=False)
     offsets = {"hbond": 0.2, "salt": 0, "hydro": -0.2}
     for panel, (ax, block) in enumerate(zip(axes[0], blocks)):
@@ -287,24 +285,23 @@ def plot_pairs(pairs, top, n_models, stats, rasters, path):
         style_axis(ax)
     extra = [Patch(facecolor="0.88", label="Contact ≤8 Å")]
     fig.legend(handles=type_handles(extra), fontsize=SMALL_FONT - 1, ncol=4, frameon=False, loc="lower center", bbox_to_anchor=(0.5, -0.01), handletextpad=0.3, columnspacing=0.8)
-    finish_figure(fig, path, rasters)
+    finish_figure(fig, path)
 ###################################### merged panel
-def plot_panel(rasters, out, name, gap, row_gap):
-    rows, cols = PANEL_LAYOUT
-    heights = [img.shape[0] / DPI for img in rasters]
-    row_heights = [max(heights[r * cols:(r + 1) * cols] or [FIG[1]]) for r in range(rows)]
-    fig = plt.figure(figsize=(FIG[0] * cols, sum(row_heights)), layout="constrained")
-    fig.get_layout_engine().set(wspace=gap, hspace=row_gap, w_pad=0.06, h_pad=0.06)
-    grid = fig.add_gridspec(rows, cols, height_ratios=row_heights)
-    for i in range(rows * cols):
-        ax = fig.add_subplot(grid[i // cols, i % cols])
-        ax.set_axis_off()
-        if i < len(rasters):
-            ax.imshow(rasters[i], aspect="equal")
-            ax.text(0.01, 0.99, PANEL_LETTERS[i], transform=ax.transAxes, fontsize=FONT + 3, fontweight="bold", va="top")
+def plot_panel(paths, out, name):
+    page_width, page_height = 1296, 864
+    cols, rows = 3, 2
+    cell_w, cell_h = page_width / cols, page_height / rows
+    doc = fitz.open()
+    page = doc.new_page(width=page_width, height=page_height)
+    for i, path in enumerate(paths):
+        col, row = i % cols, i // cols
+        rect = fitz.Rect(col * cell_w + 10, row * cell_h + 10, (col + 1) * cell_w - 10, (row + 1) * cell_h - 10)
+        with fitz.open(path) as src:
+            page.show_pdf_page(rect, src, 0, keep_proportion=True)
+        page.insert_text((rect.x0 + 7, rect.y0 + 18), PANEL_LETTERS[i], fontsize=18, fontname="helv", color=(0, 0, 0))
     path = out / f"{name}_interface_panel.pdf"
-    fig.savefig(path, format="pdf", bbox_inches="tight")
-    plt.close(fig)
+    doc.save(path, garbage=4, deflate=True)
+    doc.close()
     print(f"[PYTHON-INFO] wrote {path}")
 ###################################### main
 def main():
@@ -358,13 +355,17 @@ def main():
     pair_out = [[*r["key"], r["n"], *[round(r["occ"][k], 4) for k in TYPES], round(r["any"], 4), round(r["contact"], 4), round(r["score"], 3), "" if not np.isfinite(r["burial"]) else round(r["burial"], 4), r["dominant"], int(r["stable"]), n_models] for r in pairs]
     write_tsv(out / f"{name}_residue_frequencies.tsv", residue_cols, residue_out)
     write_tsv(out / f"{name}_pair_frequencies.tsv", pair_cols, pair_out)
-    rasters = []
-    plot_contact_map(contact_models, params["contact_min_models"], n_models, stats, rasters, out / f"{name}_A_contact_map.pdf")
-    plot_complex(complexes, sources, params, rasters, out / f"{name}_B_complex_stability.pdf")
-    plot_scatter(residues, n_models, params, stats, rasters, out / f"{name}_C_burial_vs_occupancy.pdf")
-    plot_residues(residues, params["top_residues"], n_models, stats, rasters, out / f"{name}_D_residue_occupancy.pdf")
-    plot_pairs(pairs, params["top_pairs"], n_models, stats, rasters, out / f"{name}_E_pair_occupancy.pdf")
-    plot_panel(rasters, out, name, params["panel_gap"], params["panel_row_gap"])
+    panel_paths = [out / f"{name}_{label}_{suffix}.pdf" for label, suffix in (("A", "contact_map"), ("B", "complex_stability"), ("C", "burial_vs_occupancy"), ("D", "residue_occupancy_panel"), ("E", "pair_occupancy_panel"))]
+    plot_contact_map(contact_models, params["contact_min_models"], n_models, stats, out / f"{name}_A_contact_map.pdf")
+    plot_complex(complexes, sources, params, out / f"{name}_B_complex_stability.pdf")
+    plot_scatter(residues, n_models, params, stats, out / f"{name}_C_burial_vs_occupancy.pdf")
+    plot_residues(residues, None, n_models, stats, out / f"{name}_D_residue_occupancy.pdf")
+    plot_pairs(pairs, None, n_models, stats, out / f"{name}_E_pair_occupancy.pdf")
+    plot_residues(residues, min(params["top_residues"], 8), n_models, stats, panel_paths[3])
+    plot_pairs(pairs, min(params["top_pairs"], 12), n_models, stats, panel_paths[4])
+    plot_panel([out / f"{name}_A_contact_map.pdf", out / f"{name}_B_complex_stability.pdf", out / f"{name}_C_burial_vs_occupancy.pdf", panel_paths[3], panel_paths[4]], out, name)
+    for path in panel_paths[3:]:
+        path.unlink(missing_ok=True)
     print(f"[PYTHON-INFO] models={n_models} residues={len(residues)} pairs={len(pairs)} stabilizing_pairs={sum(r['stable'] for r in pairs)}")
     save_config(args.yaml_out, params)
     print(f"[PYTHON-INFO] {datetime.datetime.now():%Y-%m-%d %H:%M:%S} exec={time.time()-start:.2f}s maxmem={resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024:.1f}MB")

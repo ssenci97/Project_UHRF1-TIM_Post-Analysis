@@ -3,8 +3,8 @@
 #SBATCH --partition=EPYC
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=8G
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=10G
 #SBATCH --time=01:00:00
 #SBATCH --output=logs/interfaces-%j.log
 
@@ -29,7 +29,6 @@ if [ ! -d "$VENV" ]; then
 fi
 
 source "$VENV/bin/activate" || exit 1
-
 ###################################### validation
 for script in "${SCRIPTS[@]}"; do
     if [ ! -f "$PROJECT_DIR/src/$script" ]; then
