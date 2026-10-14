@@ -1,4 +1,4 @@
-order	structure	source	color_A	color_B	n_CA_matched	CA_rmsd_A
-0	TIM-DBD_x_UHRF1-SRA_abin_emref_13	abin	salmon	teal	141	0.000
-1	TIM-DBD_x_UHRF1-SRA_abin_emref_83	abin	salmon	teal	141	4.570
-2	TIM-DBD_x_UHRF1-SRA_model_0	model	grey	black	139	13.652
+order	structure	source	color_A	color_B	n_CA_matched	CA_rmsd_A	haddock_score
+0	TIM-DBD_x_UHRF1-SRA_abin_emref_13	abin	salmon	teal	141	0.000	
+1	TIM-DBD_x_UHRF1-SRA_abin_emref_83	abin	salmon	teal	141	4.570	
+2	TIM-DBD_x_UHRF1-SRA_model_0	model	grey	black	139	13.652	

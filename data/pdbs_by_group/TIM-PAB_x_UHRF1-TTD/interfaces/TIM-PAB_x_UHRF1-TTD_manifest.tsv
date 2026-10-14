@@ -1,12 +1,12 @@
-order	structure	source	color_A	color_B	n_CA_matched	CA_rmsd_A
-0	TIM-PAB_x_UHRF1-TTD_abin_emref_100	abin	salmon	teal	94	0.000
-1	TIM-PAB_x_UHRF1-TTD_abin_emref_104	abin	salmon	teal	94	0.455
-2	TIM-PAB_x_UHRF1-TTD_abin_emref_122	abin	salmon	teal	94	0.262
-3	TIM-PAB_x_UHRF1-TTD_abin_emref_140	abin	salmon	teal	94	0.420
-4	TIM-PAB_x_UHRF1-TTD_abin_emref_155	abin	salmon	teal	94	0.276
-5	TIM-PAB_x_UHRF1-TTD_abin_emref_188	abin	salmon	teal	94	0.286
-6	TIM-PAB_x_UHRF1-TTD_model_0	model	grey	black	94	1.146
-7	TIM-PAB_x_UHRF1-TTD_model_1	model	grey	black	94	1.218
-8	TIM-PAB_x_UHRF1-TTD_model_2	model	grey	black	94	1.189
-9	TIM-PAB_x_UHRF1-TTD_model_3	model	grey	black	94	1.203
-10	TIM-PAB_x_UHRF1-TTD_model_4	model	grey	black	94	1.149
+order	structure	source	color_A	color_B	n_CA_matched	CA_rmsd_A	haddock_score
+0	TIM-PAB_x_UHRF1-TTD_abin_emref_100	abin	salmon	teal	94	0.000	
+1	TIM-PAB_x_UHRF1-TTD_abin_emref_104	abin	salmon	teal	94	0.455	
+2	TIM-PAB_x_UHRF1-TTD_abin_emref_122	abin	salmon	teal	94	0.262	
+3	TIM-PAB_x_UHRF1-TTD_abin_emref_140	abin	salmon	teal	94	0.420	
+4	TIM-PAB_x_UHRF1-TTD_abin_emref_155	abin	salmon	teal	94	0.276	
+5	TIM-PAB_x_UHRF1-TTD_abin_emref_188	abin	salmon	teal	94	0.286	
+6	TIM-PAB_x_UHRF1-TTD_model_0	model	grey	black	94	1.146	
+7	TIM-PAB_x_UHRF1-TTD_model_1	model	grey	black	94	1.218	
+8	TIM-PAB_x_UHRF1-TTD_model_2	model	grey	black	94	1.189	
+9	TIM-PAB_x_UHRF1-TTD_model_3	model	grey	black	94	1.203	
+10	TIM-PAB_x_UHRF1-TTD_model_4	model	grey	black	94	1.149	

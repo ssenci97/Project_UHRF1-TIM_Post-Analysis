@@ -1,6 +1,6 @@
-structure	source	clash	len_res_a	len_res_b	len_atoms_a	len_atoms_b	dASA_A2	initial_sasa_A2	frac_dASA	n_contacts	iface_res_a	iface_res_b	min_dist_A	contact_score
-TIM-NTD_x_UHRF1-TTD_model_0	model	1	463	151	3779	1243	1195.23	39523.77	0.0302	2071	32	34	2.379	1400.397
-TIM-NTD_x_UHRF1-TTD_model_1	model	1	463	151	3779	1243	831.98	39762.97	0.0209	1585	37	32	2.376	1213.0249
-TIM-NTD_x_UHRF1-TTD_model_2	model	1	463	151	3779	1243	1151.77	39423.24	0.0292	1894	38	36	2.369	1398.4719
-TIM-NTD_x_UHRF1-TTD_model_3	model	1	463	151	3779	1243	1082.19	38909.39	0.0278	1950	35	33	2.052	1375.8281
-TIM-NTD_x_UHRF1-TTD_model_4	model	1	463	151	3779	1243	2130.35	37575.12	0.0567	3890	48	58	2.342	2361.6967
+structure	source	clash	len_res_a	len_res_b	len_atoms_a	len_atoms_b	dASA_A2	initial_sasa_A2	frac_dASA	n_contacts	iface_res_a	iface_res_b	min_dist_A	contact_score	haddock_score
+TIM-NTD_x_UHRF1-TTD_model_0	model	1	463	151	3779	1243	1195.23	39523.77	0.0302	2071	32	34	2.379	1400.397	
+TIM-NTD_x_UHRF1-TTD_model_1	model	1	463	151	3779	1243	831.98	39762.97	0.0209	1585	37	32	2.376	1213.0249	
+TIM-NTD_x_UHRF1-TTD_model_2	model	1	463	151	3779	1243	1151.77	39423.24	0.0292	1894	38	36	2.369	1398.4719	
+TIM-NTD_x_UHRF1-TTD_model_3	model	1	463	151	3779	1243	1082.19	38909.39	0.0278	1950	35	33	2.052	1375.8281	
+TIM-NTD_x_UHRF1-TTD_model_4	model	1	463	151	3779	1243	2130.35	37575.12	0.0567	3890	48	58	2.342	2361.6967	
