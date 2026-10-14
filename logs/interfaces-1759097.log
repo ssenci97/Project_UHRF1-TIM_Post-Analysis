@@ -1,0 +1,375 @@
+[SLURM-INFO] Working directory: /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST
+[SLURM-INFO] Started: 2026-10-14 23:11:15
+[SLURM-INFO] Processing group: TIM-DBD_x_UHRF1-SRA
+[PYTHON-INFO] structures=3 reference=TIM-DBD_x_UHRF1-SRA_abin_emref_13 align_chain=A
+loading:   0%|          | 0/3 [00:00<?, ?it/s]loading:  33%|███▎      | 1/3 [00:00<00:00,  4.46it/s]loading: 100%|██████████| 3/3 [00:00<00:00,  9.37it/s]
+aligning:   0%|          | 0/3 [00:00<?, ?it/s]aligning: 100%|██████████| 3/3 [00:00<00:00, 211.54it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/aligned/TIM-DBD_x_UHRF1-SRA_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/aligned/TIM-DBD_x_UHRF1-SRA_viewer.html
+[PYTHON-INFO] 2026-10-14 23:11:17 exec=1.09s maxmem=74.3MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-SRA: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 0/3 local PDB files
+plotting: 0it [00:00, ?it/s]plotting: 0it [00:00, ?it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:11:18 exec=0.02s maxmem=62.3MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-SRA: HADDOCK analysis completed
+[PYTHON-INFO] structures=3 workers=4; all clashing models retained
+interfaces:   0%|          | 0/3 [00:00<?, ?it/s]interfaces:  33%|███▎      | 1/3 [00:03<00:06,  3.43s/it]interfaces: 100%|██████████| 3/3 [00:03<00:00,  1.14s/it]
+[PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_13: residues=76 PyMOL pairs=16 clash=0
+[PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_abin_emref_83: residues=86 PyMOL pairs=12 clash=0
+[PYTHON-INFO] TIM-DBD_x_UHRF1-SRA_model_0: residues=82 PyMOL pairs=16 clash=1
+[PYTHON-INFO] wrote 3 complex, 244 residue and 44 interaction rows
+[PYTHON-INFO] 2026-10-14 23:11:21 exec=3.48s maxmem=41.2MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-SRA: interface analysis completed
+[PYTHON-INFO] group=TIM-DBD_x_UHRF1-SRA input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/244 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 244/244 [00:00<00:00, 94585.04row/s]
+Aggregating pairs:   0%|          | 0/44 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 44/44 [00:00<00:00, 41574.54row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-SRA/interface_summary/TIM-DBD_x_UHRF1-SRA_interface_panel.pdf
+[PYTHON-INFO] models=3 residues=78 pairs=45 stabilizing_pairs=25
+[PYTHON-INFO] 2026-10-14 23:11:26 exec=4.54s maxmem=644.9MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-SRA: summary completed
+[SLURM-INFO] Processing group: TIM-DBD_x_UHRF1-TTD
+[PYTHON-INFO] structures=5 reference=TIM-DBD_x_UHRF1-TTD_model_0 align_chain=A
+loading:   0%|          | 0/5 [00:00<?, ?it/s]loading:  40%|████      | 2/5 [00:00<00:00,  6.58it/s]loading:  60%|██████    | 3/5 [00:00<00:00,  7.40it/s]loading: 100%|██████████| 5/5 [00:00<00:00,  9.93it/s]loading: 100%|██████████| 5/5 [00:00<00:00,  8.79it/s]
+aligning:   0%|          | 0/5 [00:00<?, ?it/s]aligning: 100%|██████████| 5/5 [00:00<00:00, 107.46it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/aligned/TIM-DBD_x_UHRF1-TTD_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/aligned/TIM-DBD_x_UHRF1-TTD_viewer.html
+[PYTHON-INFO] 2026-10-14 23:11:29 exec=1.70s maxmem=79.6MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-TTD: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 0/5 local PDB files
+plotting: 0it [00:00, ?it/s]plotting: 0it [00:00, ?it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:11:29 exec=0.04s maxmem=64.3MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-TTD: HADDOCK analysis completed
+[PYTHON-INFO] structures=5 workers=4; all clashing models retained
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:02<00:08,  2.10s/it]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.08it/s]interfaces: 100%|██████████| 5/5 [00:05<00:00,  1.01s/it]
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_0: residues=77 PyMOL pairs=21 clash=0
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_1: residues=113 PyMOL pairs=24 clash=1
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_2: residues=113 PyMOL pairs=30 clash=1
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_3: residues=118 PyMOL pairs=23 clash=1
+[PYTHON-INFO] TIM-DBD_x_UHRF1-TTD_model_4: residues=80 PyMOL pairs=19 clash=1
+[PYTHON-INFO] wrote 5 complex, 501 residue and 117 interaction rows
+[PYTHON-INFO] 2026-10-14 23:11:34 exec=5.12s maxmem=42.3MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-TTD: interface analysis completed
+[PYTHON-INFO] group=TIM-DBD_x_UHRF1-TTD input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/501 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 501/501 [00:00<00:00, 155666.81row/s]
+Aggregating pairs:   0%|          | 0/117 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 117/117 [00:00<00:00, 104433.62row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-DBD_x_UHRF1-TTD/interface_summary/TIM-DBD_x_UHRF1-TTD_interface_panel.pdf
+[PYTHON-INFO] models=5 residues=115 pairs=285 stabilizing_pairs=80
+[PYTHON-INFO] 2026-10-14 23:11:45 exec=9.62s maxmem=2758.9MB
+[SLURM-INFO] TIM-DBD_x_UHRF1-TTD: summary completed
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-PHD
+[PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-PHD_model_0 align_chain=A
+loading:   0%|          | 0/5 [00:00<?, ?it/s]loading:  40%|████      | 2/5 [00:00<00:00, 12.46it/s]loading:  80%|████████  | 4/5 [00:00<00:00, 12.63it/s]loading: 100%|██████████| 5/5 [00:00<00:00, 14.08it/s]
+aligning:   0%|          | 0/5 [00:00<?, ?it/s]aligning: 100%|██████████| 5/5 [00:00<00:00, 113.30it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/aligned/TIM-NTD_x_UHRF1-PHD_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/aligned/TIM-NTD_x_UHRF1-PHD_viewer.html
+[PYTHON-INFO] 2026-10-14 23:11:47 exec=2.20s maxmem=111.7MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-PHD: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 0/5 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  9.61it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  6.83it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/haddock_analysis/TIM-NTD_x_UHRF1-PHD_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:11:48 exec=0.29s maxmem=67.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-PHD: HADDOCK analysis completed
+[PYTHON-INFO] structures=5 workers=4; all clashing models retained
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:04<00:19,  4.85s/it]interfaces:  40%|████      | 2/5 [00:05<00:06,  2.17s/it]interfaces: 100%|██████████| 5/5 [00:09<00:00,  1.55s/it]interfaces: 100%|██████████| 5/5 [00:09<00:00,  1.82s/it]
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_0: residues=75 PyMOL pairs=12 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_1: residues=72 PyMOL pairs=13 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_2: residues=73 PyMOL pairs=18 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_3: residues=74 PyMOL pairs=16 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-PHD_model_4: residues=83 PyMOL pairs=11 clash=1
+[PYTHON-INFO] wrote 5 complex, 377 residue and 70 interaction rows
+[PYTHON-INFO] 2026-10-14 23:11:58 exec=9.24s maxmem=43.4MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-PHD: interface analysis completed
+[PYTHON-INFO] group=TIM-NTD_x_UHRF1-PHD input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/377 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 377/377 [00:00<00:00, 120229.06row/s]
+Aggregating pairs:   0%|          | 0/70 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 70/70 [00:00<00:00, 45357.84row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-PHD/interface_summary/TIM-NTD_x_UHRF1-PHD_interface_panel.pdf
+[PYTHON-INFO] models=5 residues=84 pairs=173 stabilizing_pairs=41
+[PYTHON-INFO] 2026-10-14 23:12:05 exec=7.14s maxmem=1766.7MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-PHD: summary completed
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-RING
+[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-RING_abin_emref_104 align_chain=A
+loading:   0%|          | 0/11 [00:00<?, ?it/s]loading:   9%|▉         | 1/11 [00:00<00:01,  8.58it/s]loading:  27%|██▋       | 3/11 [00:00<00:00, 10.51it/s]loading:  45%|████▌     | 5/11 [00:00<00:00,  9.99it/s]loading:  55%|█████▍    | 6/11 [00:00<00:00,  9.87it/s]loading:  73%|███████▎  | 8/11 [00:00<00:00, 10.75it/s]loading:  91%|█████████ | 10/11 [00:01<00:00,  8.22it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  7.21it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  8.38it/s]
+aligning:   0%|          | 0/11 [00:00<?, ?it/s]aligning:  73%|███████▎  | 8/11 [00:00<00:00, 73.01it/s]aligning: 100%|██████████| 11/11 [00:00<00:00, 68.78it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/aligned/TIM-NTD_x_UHRF1-RING_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/aligned/TIM-NTD_x_UHRF1-RING_viewer.html
+[PYTHON-INFO] 2026-10-14 23:12:12 exec=5.71s maxmem=169.8MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-RING: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 6/11 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  7.73it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  6.26it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/haddock_analysis/TIM-NTD_x_UHRF1-RING_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:12:13 exec=0.21s maxmem=67.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-RING: HADDOCK analysis completed
+[PYTHON-INFO] structures=11 workers=4; all clashing models retained
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:04<00:48,  4.87s/it]interfaces:  45%|████▌     | 5/11 [00:10<00:11,  1.87s/it]interfaces:  55%|█████▍    | 6/11 [00:11<00:08,  1.71s/it]interfaces:  64%|██████▎   | 7/11 [00:11<00:05,  1.32s/it]interfaces:  82%|████████▏ | 9/11 [00:17<00:03,  1.91s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.28s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.59s/it]
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_104: residues=67 PyMOL pairs=11 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_140: residues=79 PyMOL pairs=11 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_171: residues=77 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_abin_emref_83: residues=89 PyMOL pairs=21 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_model_4: residues=85 PyMOL pairs=9 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_0_emref_1: residues=71 PyMOL pairs=11 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_0_0_1_emref_1: residues=70 PyMOL pairs=16 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_0_emref_1: residues=75 PyMOL pairs=11 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_1_0_1_emref_1: residues=66 PyMOL pairs=13 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_0_emref_1: residues=70 PyMOL pairs=7 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-RING_pdbeval_P_2_0_1_emref_1: residues=72 PyMOL pairs=13 clash=0
+[PYTHON-INFO] wrote 11 complex, 821 residue and 140 interaction rows
+[PYTHON-INFO] 2026-10-14 23:12:31 exec=17.68s maxmem=43.4MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-RING: interface analysis completed
+[PYTHON-INFO] group=TIM-NTD_x_UHRF1-RING input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/821 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 821/821 [00:00<00:00, 147303.91row/s]
+Aggregating pairs:   0%|          | 0/140 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 140/140 [00:00<00:00, 51763.27row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-RING/interface_summary/TIM-NTD_x_UHRF1-RING_interface_panel.pdf
+[PYTHON-INFO] models=11 residues=152 pairs=318 stabilizing_pairs=0
+[PYTHON-INFO] 2026-10-14 23:12:43 exec=11.42s maxmem=3042.2MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-RING: summary completed
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-SRA
+[PYTHON-INFO] structures=11 reference=TIM-NTD_x_UHRF1-SRA_abin_emref_19 align_chain=A
+loading:   0%|          | 0/11 [00:00<?, ?it/s]loading:  18%|█▊        | 2/11 [00:00<00:00, 12.08it/s]loading:  36%|███▋      | 4/11 [00:00<00:00, 11.66it/s]loading:  55%|█████▍    | 6/11 [00:00<00:00, 10.31it/s]loading:  73%|███████▎  | 8/11 [00:00<00:00,  9.45it/s]loading:  82%|████████▏ | 9/11 [00:00<00:00,  9.47it/s]loading:  91%|█████████ | 10/11 [00:01<00:00,  8.22it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  7.22it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  8.30it/s]
+aligning:   0%|          | 0/11 [00:00<?, ?it/s]aligning:  55%|█████▍    | 6/11 [00:00<00:00, 57.68it/s]aligning: 100%|██████████| 11/11 [00:00<00:00, 51.21it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/aligned/TIM-NTD_x_UHRF1-SRA_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/aligned/TIM-NTD_x_UHRF1-SRA_viewer.html
+[PYTHON-INFO] 2026-10-14 23:12:50 exec=6.74s maxmem=183.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-SRA: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 2/11 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00, 11.40it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/haddock_analysis/TIM-NTD_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:12:51 exec=0.16s maxmem=68.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-SRA: HADDOCK analysis completed
+[PYTHON-INFO] structures=11 workers=4; all clashing models retained
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:05<00:56,  5.61s/it]interfaces:  45%|████▌     | 5/11 [00:11<00:12,  2.05s/it]interfaces:  64%|██████▎   | 7/11 [00:11<00:05,  1.30s/it]interfaces:  73%|███████▎  | 8/11 [00:11<00:03,  1.09s/it]interfaces:  82%|████████▏ | 9/11 [00:16<00:03,  1.98s/it]interfaces:  91%|█████████ | 10/11 [00:17<00:01,  1.74s/it]interfaces: 100%|██████████| 11/11 [00:17<00:00,  1.61s/it]
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_19: residues=98 PyMOL pairs=18 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_33: residues=75 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_66: residues=94 PyMOL pairs=18 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_abin_emref_7: residues=85 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_0: residues=186 PyMOL pairs=31 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_1: residues=171 PyMOL pairs=36 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_2: residues=185 PyMOL pairs=39 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_3: residues=182 PyMOL pairs=38 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_model_4: residues=186 PyMOL pairs=40 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_0_emref_1: residues=75 PyMOL pairs=12 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-SRA_pdbeval_P_0_0_1_emref_1: residues=71 PyMOL pairs=13 clash=0
+[PYTHON-INFO] wrote 11 complex, 1408 residue and 279 interaction rows
+[PYTHON-INFO] 2026-10-14 23:13:09 exec=17.78s maxmem=42.4MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-SRA: interface analysis completed
+[PYTHON-INFO] group=TIM-NTD_x_UHRF1-SRA input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/1408 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 1408/1408 [00:00<00:00, 164840.62row/s]
+Aggregating pairs:   0%|          | 0/279 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 279/279 [00:00<00:00, 64784.96row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-SRA/interface_summary/TIM-NTD_x_UHRF1-SRA_interface_panel.pdf
+[PYTHON-INFO] models=11 residues=309 pairs=631 stabilizing_pairs=0
+[PYTHON-INFO] 2026-10-14 23:13:27 exec=17.79s maxmem=5803.5MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-SRA: summary completed
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-TTD
+[PYTHON-INFO] structures=5 reference=TIM-NTD_x_UHRF1-TTD_model_0 align_chain=A
+loading:   0%|          | 0/5 [00:00<?, ?it/s]loading:  20%|██        | 1/5 [00:00<00:01,  3.71it/s]loading:  60%|██████    | 3/5 [00:00<00:00,  7.74it/s]loading:  80%|████████  | 4/5 [00:00<00:00,  6.99it/s]loading: 100%|██████████| 5/5 [00:00<00:00,  7.27it/s]
+aligning:   0%|          | 0/5 [00:00<?, ?it/s]aligning: 100%|██████████| 5/5 [00:00<00:00, 79.23it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/aligned/TIM-NTD_x_UHRF1-TTD_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/aligned/TIM-NTD_x_UHRF1-TTD_viewer.html
+[PYTHON-INFO] 2026-10-14 23:13:31 exec=2.97s maxmem=124.0MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-TTD: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 0/5 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00, 10.93it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/haddock_analysis/TIM-NTD_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:13:32 exec=0.29s maxmem=68.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-TTD: HADDOCK analysis completed
+[PYTHON-INFO] structures=5 workers=4; all clashing models retained
+interfaces:   0%|          | 0/5 [00:00<?, ?it/s]interfaces:  20%|██        | 1/5 [00:05<00:23,  5.87s/it]interfaces: 100%|██████████| 5/5 [00:11<00:00,  2.00s/it]interfaces: 100%|██████████| 5/5 [00:11<00:00,  2.23s/it]
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_0: residues=66 PyMOL pairs=17 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_1: residues=69 PyMOL pairs=6 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_2: residues=74 PyMOL pairs=9 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_3: residues=68 PyMOL pairs=13 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-TTD_model_4: residues=106 PyMOL pairs=20 clash=1
+[PYTHON-INFO] wrote 5 complex, 383 residue and 65 interaction rows
+[PYTHON-INFO] 2026-10-14 23:13:43 exec=11.26s maxmem=43.3MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-TTD: interface analysis completed
+[PYTHON-INFO] group=TIM-NTD_x_UHRF1-TTD input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/383 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 383/383 [00:00<00:00, 141025.23row/s]
+Aggregating pairs:   0%|          | 0/65 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 65/65 [00:00<00:00, 45309.92row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-TTD/interface_summary/TIM-NTD_x_UHRF1-TTD_interface_panel.pdf
+[PYTHON-INFO] models=5 residues=80 pairs=153 stabilizing_pairs=16
+[PYTHON-INFO] 2026-10-14 23:13:51 exec=6.86s maxmem=1591.0MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-TTD: summary completed
+[SLURM-INFO] Processing group: TIM-NTD_x_UHRF1-UBL
+[PYTHON-INFO] structures=14 reference=TIM-NTD_x_UHRF1-UBL_abin_emref_135 align_chain=A
+loading:   0%|          | 0/14 [00:00<?, ?it/s]loading:  14%|█▍        | 2/14 [00:00<00:00, 13.30it/s]loading:  29%|██▊       | 4/14 [00:00<00:00, 12.87it/s]loading:  43%|████▎     | 6/14 [00:00<00:00,  9.68it/s]loading:  57%|█████▋    | 8/14 [00:00<00:00, 11.00it/s]loading:  71%|███████▏  | 10/14 [00:00<00:00, 12.05it/s]loading:  86%|████████▌ | 12/14 [00:00<00:00, 13.30it/s]loading: 100%|██████████| 14/14 [00:01<00:00, 13.48it/s]loading: 100%|██████████| 14/14 [00:01<00:00, 12.43it/s]
+aligning:   0%|          | 0/14 [00:00<?, ?it/s]aligning:  71%|███████▏  | 10/14 [00:00<00:00, 97.13it/s]aligning: 100%|██████████| 14/14 [00:00<00:00, 93.99it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/aligned/TIM-NTD_x_UHRF1-UBL_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/aligned/TIM-NTD_x_UHRF1-UBL_viewer.html
+[PYTHON-INFO] 2026-10-14 23:13:58 exec=6.38s maxmem=204.2MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-UBL: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 6/14 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  7.52it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  7.31it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/haddock_analysis/TIM-NTD_x_UHRF1-UBL_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:13:59 exec=0.18s maxmem=67.4MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-UBL: HADDOCK analysis completed
+[PYTHON-INFO] structures=14 workers=4; all clashing models retained
+interfaces:   0%|          | 0/14 [00:00<?, ?it/s]interfaces:   7%|▋         | 1/14 [00:04<00:56,  4.38s/it]interfaces:  14%|█▍        | 2/14 [00:04<00:23,  1.92s/it]interfaces:  36%|███▌      | 5/14 [00:09<00:14,  1.63s/it]interfaces:  43%|████▎     | 6/14 [00:09<00:11,  1.39s/it]interfaces:  50%|█████     | 7/14 [00:10<00:07,  1.10s/it]interfaces:  64%|██████▍   | 9/14 [00:13<00:07,  1.44s/it]interfaces:  71%|███████▏  | 10/14 [00:14<00:05,  1.25s/it]interfaces:  79%|███████▊  | 11/14 [00:14<00:03,  1.04s/it]interfaces:  93%|█████████▎| 13/14 [00:18<00:01,  1.36s/it]interfaces: 100%|██████████| 14/14 [00:19<00:00,  1.35s/it]interfaces: 100%|██████████| 14/14 [00:19<00:00,  1.42s/it]
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_135: residues=65 PyMOL pairs=14 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_57: residues=53 PyMOL pairs=13 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_71: residues=67 PyMOL pairs=18 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_abin_emref_77: residues=55 PyMOL pairs=11 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_0: residues=74 PyMOL pairs=18 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_1: residues=95 PyMOL pairs=18 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_2: residues=66 PyMOL pairs=15 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_model_3: residues=72 PyMOL pairs=15 clash=1
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_0_emref_1: residues=60 PyMOL pairs=9 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_0_0_1_emref_1: residues=65 PyMOL pairs=16 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_0_emref_1: residues=68 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_1_0_1_emref_1: residues=68 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_0_emref_1: residues=55 PyMOL pairs=15 clash=0
+[PYTHON-INFO] TIM-NTD_x_UHRF1-UBL_pdbeval_P_2_0_1_emref_1: residues=72 PyMOL pairs=12 clash=0
+[PYTHON-INFO] wrote 14 complex, 935 residue and 208 interaction rows
+[PYTHON-INFO] 2026-10-14 23:14:19 exec=20.01s maxmem=41.2MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-UBL: interface analysis completed
+[PYTHON-INFO] group=TIM-NTD_x_UHRF1-UBL input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/935 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 935/935 [00:00<00:00, 146802.21row/s]
+Aggregating pairs:   0%|          | 0/208 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 208/208 [00:00<00:00, 48516.03row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-NTD_x_UHRF1-UBL/interface_summary/TIM-NTD_x_UHRF1-UBL_interface_panel.pdf
+[PYTHON-INFO] models=14 residues=139 pairs=560 stabilizing_pairs=0
+[PYTHON-INFO] 2026-10-14 23:14:36 exec=16.26s maxmem=5168.4MB
+[SLURM-INFO] TIM-NTD_x_UHRF1-UBL: summary completed
+[SLURM-INFO] Processing group: TIM-PAB_x_UHRF1-SRA
+[PYTHON-INFO] structures=12 reference=TIM-PAB_x_UHRF1-SRA_abin_emref_156 align_chain=A
+loading:   0%|          | 0/12 [00:00<?, ?it/s]loading:  17%|█▋        | 2/12 [00:00<00:00, 16.22it/s]loading:  33%|███▎      | 4/12 [00:00<00:00, 13.16it/s]loading:  50%|█████     | 6/12 [00:00<00:00,  8.23it/s]loading:  67%|██████▋   | 8/12 [00:00<00:00,  9.31it/s]loading:  83%|████████▎ | 10/12 [00:01<00:00,  9.29it/s]loading: 100%|██████████| 12/12 [00:01<00:00, 10.20it/s]loading: 100%|██████████| 12/12 [00:01<00:00, 10.02it/s]
+aligning:   0%|          | 0/12 [00:00<?, ?it/s]aligning:  92%|█████████▏| 11/12 [00:00<00:00, 106.23it/s]aligning: 100%|██████████| 12/12 [00:00<00:00, 101.47it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/aligned/TIM-PAB_x_UHRF1-SRA_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/aligned/TIM-PAB_x_UHRF1-SRA_viewer.html
+[PYTHON-INFO] 2026-10-14 23:14:40 exec=4.21s maxmem=123.7MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-SRA: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 2/12 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  8.01it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  5.50it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/haddock_analysis/TIM-PAB_x_UHRF1-SRA_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:14:41 exec=0.23s maxmem=67.4MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-SRA: HADDOCK analysis completed
+[PYTHON-INFO] structures=12 workers=4; all clashing models retained
+interfaces:   0%|          | 0/12 [00:00<?, ?it/s]interfaces:   8%|▊         | 1/12 [00:02<00:31,  2.90s/it]interfaces:  17%|█▋        | 2/12 [00:03<00:14,  1.44s/it]interfaces:  42%|████▏     | 5/12 [00:06<00:08,  1.21s/it]interfaces:  75%|███████▌  | 9/12 [00:08<00:02,  1.38it/s]interfaces:  92%|█████████▏| 11/12 [00:09<00:00,  1.55it/s]interfaces: 100%|██████████| 12/12 [00:10<00:00,  1.34it/s]interfaces: 100%|██████████| 12/12 [00:10<00:00,  1.16it/s]
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_156: residues=56 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_174: residues=53 PyMOL pairs=16 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_175: residues=54 PyMOL pairs=10 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_180: residues=57 PyMOL pairs=19 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_abin_emref_41: residues=72 PyMOL pairs=17 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_0: residues=70 PyMOL pairs=14 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_1: residues=64 PyMOL pairs=8 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_2: residues=65 PyMOL pairs=8 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_3: residues=68 PyMOL pairs=9 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_model_4: residues=86 PyMOL pairs=17 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_0_emref_1: residues=65 PyMOL pairs=14 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-SRA_pdbeval_P_0_1_1_emref_1: residues=79 PyMOL pairs=16 clash=0
+[PYTHON-INFO] wrote 12 complex, 789 residue and 165 interaction rows
+[PYTHON-INFO] 2026-10-14 23:14:52 exec=10.46s maxmem=41.4MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-SRA: interface analysis completed
+[PYTHON-INFO] group=TIM-PAB_x_UHRF1-SRA input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/789 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 789/789 [00:00<00:00, 145444.81row/s]
+Aggregating pairs:   0%|          | 0/165 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 165/165 [00:00<00:00, 57077.13row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-SRA/interface_summary/TIM-PAB_x_UHRF1-SRA_interface_panel.pdf
+[PYTHON-INFO] models=12 residues=142 pairs=395 stabilizing_pairs=11
+[PYTHON-INFO] 2026-10-14 23:15:05 exec=12.73s maxmem=3729.0MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-SRA: summary completed
+[SLURM-INFO] Processing group: TIM-PAB_x_UHRF1-TTD
+[PYTHON-INFO] structures=11 reference=TIM-PAB_x_UHRF1-TTD_abin_emref_100 align_chain=A
+loading:   0%|          | 0/11 [00:00<?, ?it/s]loading:   9%|▉         | 1/11 [00:00<00:01,  8.60it/s]loading:  27%|██▋       | 3/11 [00:00<00:00, 12.75it/s]loading:  45%|████▌     | 5/11 [00:00<00:00, 12.04it/s]loading:  64%|██████▎   | 7/11 [00:00<00:00, 10.06it/s]loading:  82%|████████▏ | 9/11 [00:01<00:00,  5.29it/s]loading:  91%|█████████ | 10/11 [00:01<00:00,  5.87it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  6.15it/s]loading: 100%|██████████| 11/11 [00:01<00:00,  6.85it/s]
+aligning:   0%|          | 0/11 [00:00<?, ?it/s]aligning: 100%|██████████| 11/11 [00:00<00:00, 119.16it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/aligned/TIM-PAB_x_UHRF1-TTD_aligned.cif and manifest
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/aligned/TIM-PAB_x_UHRF1-TTD_viewer.html
+[PYTHON-INFO] 2026-10-14 23:15:10 exec=3.97s maxmem=116.1MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-TTD: alignment completed
+[PYTHON-INFO] loaded 230 HADDOCK rows from /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/capri_ss_all.tsv
+[PYTHON-INFO] matched 0/11 local PDB files
+plotting:   0%|          | 0/1 [00:00<?, ?it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  8.33it/s]plotting: 100%|██████████| 1/1 [00:00<00:00,  7.96it/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/haddock_analysis/TIM-PAB_x_UHRF1-TTD_haddock_scores.svg
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/haddock_analysis/haddock_matched_scores.tsv
+[PYTHON-INFO] 2026-10-14 23:15:11 exec=0.29s maxmem=68.3MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-TTD: HADDOCK analysis completed
+[PYTHON-INFO] structures=11 workers=4; all clashing models retained
+interfaces:   0%|          | 0/11 [00:00<?, ?it/s]interfaces:   9%|▉         | 1/11 [00:02<00:24,  2.47s/it]interfaces:  45%|████▌     | 5/11 [00:05<00:06,  1.11s/it]interfaces:  82%|████████▏ | 9/11 [00:07<00:01,  1.47it/s]interfaces:  91%|█████████ | 10/11 [00:07<00:00,  1.63it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.53it/s]interfaces: 100%|██████████| 11/11 [00:08<00:00,  1.31it/s]
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_100: residues=52 PyMOL pairs=16 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_104: residues=73 PyMOL pairs=20 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_122: residues=61 PyMOL pairs=13 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_140: residues=63 PyMOL pairs=20 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_155: residues=65 PyMOL pairs=19 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_abin_emref_188: residues=67 PyMOL pairs=10 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_0: residues=80 PyMOL pairs=13 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_1: residues=82 PyMOL pairs=16 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_2: residues=90 PyMOL pairs=15 clash=1
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_3: residues=62 PyMOL pairs=4 clash=0
+[PYTHON-INFO] TIM-PAB_x_UHRF1-TTD_model_4: residues=67 PyMOL pairs=9 clash=1
+[PYTHON-INFO] wrote 11 complex, 762 residue and 155 interaction rows
+[PYTHON-INFO] 2026-10-14 23:15:19 exec=8.44s maxmem=42.4MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-TTD: interface analysis completed
+[PYTHON-INFO] group=TIM-PAB_x_UHRF1-TTD input=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interfaces output=/orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary
+[PYTHON-INFO] effective top_residues=30 top_pairs=20 label_top=10
+Aggregating residues:   0%|          | 0/762 [00:00<?, ?row/s]Aggregating residues: 100%|██████████| 762/762 [00:00<00:00, 139614.70row/s]
+Aggregating pairs:   0%|          | 0/155 [00:00<?, ?row/s]Aggregating pairs: 100%|██████████| 155/155 [00:00<00:00, 45172.12row/s]
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_A_contact_map.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_B_complex_stability.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_C_burial_vs_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_D_residue_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_E_pair_occupancy.pdf
+[PYTHON-INFO] wrote /orfeo/cephfs/scratch/area/ssenci/senci_projects/PPI/02_UHRF1_TIM/SUPERTEST/data/pdbs_by_group/TIM-PAB_x_UHRF1-TTD/interface_summary/TIM-PAB_x_UHRF1-TTD_interface_panel.pdf
+[PYTHON-INFO] models=11 residues=143 pairs=419 stabilizing_pairs=5
+[PYTHON-INFO] 2026-10-14 23:15:33 exec=12.91s maxmem=3945.6MB
+[SLURM-INFO] TIM-PAB_x_UHRF1-TTD: summary completed
+[SLURM-INFO] Finished: 2026-10-14 23:15:33 execution_time=257s groups=9 failed_groups=0
